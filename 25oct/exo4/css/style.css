@@ -1,0 +1,81 @@
+/* Ajouter une couleur de fond sur toute la page */
+body {
+	background-color: lightgray;
+}
+
+
+/* Sélecteur imbriqué */
+.underProject b {
+	text-decoration: none;
+	color:red;
+}
+
+/* Sélecteur par ID */
+#lastTitle {
+	background-color: black;
+	color: red;	
+}
+
+/* Sélecteur par class */
+.underTitle {
+	background-color: blue;
+}
+
+/* Sélecteur logique */
+h2 {
+	/* Ajouter une couleur de fond descendu en opacité */
+	background-color:rgba(255,0,0,.5);
+	/* Modifier la couleur des caractères */
+	color:white;
+}
+
+/* Selecteur logique */
+b {
+	/* Souligner le texte */
+	text-decoration: underline;
+}
+
+/* Sélecteur d'interaction */
+a:hover, h1:hover {
+	/* Changer la couleur au survol */
+	color:red;
+}
+
+p {
+	/* Modifier l'intérlignage */
+	line-height: 25px;
+}
+
+h1 {
+	/* Changer la taille de la police */
+	font-size: 50px;
+
+	/* Passer le texte en majuscule */
+	text-transform: uppercase;
+
+	/* Ajouter une ombre portée : x y diffusion couleur */
+	text-shadow: 0 0 5px red;
+
+	/* Ajouter une décoration au texte */
+	text-decoration: underline;
+}
+
+a {
+	/* Supprimer la décoration du texte */
+	text-decoration: none;
+
+	/* Modifier l'épaisseur de la police */
+	font-weight: bold;
+
+	/* Modifier le style de la police */
+	font-style: italic;
+
+}
+
+ul, li {
+	display: inline;
+	margin:0;
+	padding: 0;
+	word-spacing: 10px;
+
+}

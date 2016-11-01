@@ -1,0 +1,19 @@
+body {
+	/* Aligner le texte au centre */
+	text-align: center;
+}
+
+section {
+	/* Ajouter une bordure */
+	border: 5px solid black;
+
+	/* Modifier la taille de la section */
+	width: 200px;
+
+	/* Ajouter une marge intérieure */
+	padding: 20px 30px 40px 50px;
+
+	/* Ajouter une marge extérieur */
+	/* Centrer la section dans la largeur */
+	margin: 20px auto;
+}

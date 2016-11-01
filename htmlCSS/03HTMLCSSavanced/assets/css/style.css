@@ -1,0 +1,153 @@
+/* ---------------------------------------------
+--------------------- General ---------------------
+------------------------------------------------*/
+body {
+	background: white;
+	background: #88b388;
+}
+
+
+/* Attribution de la police par défaut */ 
+h1, h2, h3 {
+	font-family: 'Dosis', sans-serif;
+}
+
+.page {
+	width: 100%;
+	max-width: 1000px;
+	height: auto;
+	margin: 40px auto;
+}
+
+.page > p {
+	font-family: 'Dosis', sans-serif;
+	text-align: left;
+	color: white;
+	margin-bottom: 3px;
+	margin-left: 5px;
+}
+
+/* ---------------------------------------------
+------------------ topHeader -------------------
+------------------------------------------------*/
+
+.topHeader {
+	/* Declarer le positionnement */
+	width: 100%;
+	height: 30px;
+	float: left;
+
+	/* Décoration */
+	background-image: linear-gradient(180deg, #FFF, #eee);
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.topHeader p {
+	font-family: 'Dosis', sans-serif;
+	/* Line-Height doit être la même taille que la height de la case pour pouvoir centrer au milieu */
+	line-height: 30px; 
+	margin: 0 10px 0 0;
+	text-align: right;
+}
+
+.topHeader p a {
+	text-decoration: none;
+	color: #dd0613;
+}
+.topHeader p a:hover {
+	text-decoration: underline;
+}
+
+
+/* ---------------------------------------------
+--------------------- Header -------------------
+------------------------------------------------*/
+header {
+	width: 100%;
+	height: 180px;
+	float: left;
+	background-color: white;
+}
+
+header .logo {
+	width: 20%;
+	height: auto;
+	float:left;
+}
+
+header .logo img {
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+header nav {
+
+}
+
+header nav ul {
+	text-align: center;
+	margin:0;
+	padding:0;
+}
+
+header nav ul li {
+	display: inline-block;
+	width: 120px;
+	margin-right: 30px;
+}
+
+header nav ul li a {
+	color: black;
+	text-decoration: none;
+	line-height: 180px;
+	text-transform: uppercase;
+	font-family: 'Dosis', sans-serif;
+	font-size: 18px;
+
+}
+header nav ul li a:hover, 
+header nav ul li.current a {
+	color: #dd0613;
+}
+
+
+/* ---------------------------------------------
+--------------------- Bandeau -------------------
+------------------------------------------------*/
+.bandeau {
+	background-image: url(assets/img/bandeau.jpg);
+
+}
+
+
+/* ---------------------------------------------
+--------------------- Section -------------------
+------------------------------------------------*/
+
+
+
+
+/* ---------------------------------------------
+--------------------- Footer -------------------
+------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

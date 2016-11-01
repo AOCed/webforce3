@@ -1,0 +1,18 @@
+header {
+	background-color: gray;
+	width: auto;
+	height: 200px;
+	position:relative;
+}
+nav {
+	position:absolute;
+	bottom:0;
+}
+li {
+	display: inline-block;
+
+}
+
+#logo {
+	background-image: url(../img/bandeau.jpg);
+}

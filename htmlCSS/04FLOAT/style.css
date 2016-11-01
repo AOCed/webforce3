@@ -1,0 +1,40 @@
+
+#contenu {
+	width: auto;
+	float: left;
+	height: 750px;
+
+}
+
+#div1 {
+	width: 500px;
+	height: 100%;
+	float: left;
+	background-color: red;
+}
+#div2, #div3, #div4, #div5, #div6, #div7 {
+	width: 250px;
+	height: calc(100%/3);
+	float: left;
+
+}
+
+#div2 {
+	background-color: green;
+}
+#div3 {
+	background-color: yellow;
+}
+#div4 {
+	background-color: black;
+	color: white;
+}
+#div5 {
+	background-color: purple;
+}
+#div6 {
+	background-color: orange;
+}
+#div7 {
+	background-color: blue;
+}

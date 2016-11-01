@@ -1,0 +1,294 @@
+/* -------------------------- 
+Dans cette feuille de style CSS, je vais pouvoir 
+définir l'apparence que je veux donner aux différents 
+éléments que compose ma page.
+
+### la Syntaxe ###
+
+element {
+	propriete: valeur;
+}
+
+---------------------------- */
+a, h1, h3, address {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* 
+	### Cibler la classe d'un element ###
+	NB. une meme classe peut-etre présente plusieurs fois sur une m$eme page.
+
+		.laClasse {
+			propriete:valeur;
+		}
+
+	### Cibler l'ID d'un element ###
+	NB. Un ID ne peut être présent qu'une seule fois sur une même page.
+
+		#unID {
+			propriete:valeur;
+		}
+
+ */
+
+/* CONSIGNE : 
+
+	1 Tous les liens de mon HEADER en noir
+	2 Non souligné
+	3 Afficher en ligne via la propriete display
+
+*/
+
+
+/*-----------------------------------------------
+Ici, je cible tous les liens présents dans ma classe header 
+-------------------------------------------------*/
+.header a {
+
+	/* plusieurs facon de définir une couleur */
+	/* Mot clé de la couleur */
+	color: black;
+
+	/* Notation en hexadécimale */
+	color:#000000;
+	color:#000;
+
+	/* Notation décimale */
+	color: rgb(000, 000, 000);
+
+	/* Notation avec la trasparence */
+	color: rgba(000, 000, 000, 1);
+
+	/* Gérer le soulignement d'un texte */
+	text-decoration: none;
+
+	/* Modifier la taille d'une police */
+	font-size: 18px;
+
+	/* Je souhaite que mes liens s'affiche en Maj */
+	text-transform: uppercase;
+}
+
+/*-------------------------------------------
+Ici je cible toutes les listes présentent dans le HEADER
+---------------------------------------------*/
+
+.header ul {
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+
+.header ul li {
+	/* J'affiche en ligne mes puces */
+	display: inline-block;
+
+	/* Aligner mon texte dans chaque puce */
+	text-align: center;
+
+	/* WIDTH me permet de définir la largeur d'un élément */
+	width: 313px;
+}
+
+/* Je souhaite que mes liens soient soulignés au passage de la souris */
+
+a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+/* Je change la couleur de mon lien à l'intérieur de la classe current */
+/* NB : la classe "current" permet à mon internaute de savoir sur quelle page il se situe. */
+
+.current a {
+	color: #0babe1;
+}
+
+#page {
+
+	/* Je souhaite définir une largeur de ma page */
+	width: 960px;
+	margin: auto;
+
+	/* margin: <top/bottom> <left/right> */
+	margin: 10px auto;
+
+	/* Margin: <top> <right> <bottom> <left> */
+	margin: 60px auto 60px auto;
+
+	/* Je rajoute à ma page un fond blanc */
+	background: white;
+
+	/* Border-radius permet de rajouter un arrondi à mon élément */
+	border-radius: 5px;
+
+	/* OVERFLOW avec la valeur hidden va supprimer l'affichage de 
+	tous les éléments qui dépassent de la div#page */
+	overflow: hidden;
+
+	/* J'applique une ombre autour de ma div#page */
+	/* box-shadow : offset-x | offset-y | blur-radius | color */
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+
+	/* J'applique une marge interne de 5px autour de la page */
+	padding: 10px;
+}
+
+
+body {
+	background: #858484;
+}
+
+/* Si je veux ciber seulement enfant direct d'un ID/class
+on ajoute #contenu > h1 */
+#contenu h1 {
+
+	/*Aligner mon titre au milieu */
+	text-align: center;
+
+	/* Je souhaite pas que le texte soit en gras */
+	font-weight: normal;
+
+	/* Pour faire une bordure en bas de mon titre */
+	/* solid : ligne par defaut, dotted: petit point, dashed: des traitsd'union; */
+	border-bottom: 1px dashed black;
+}
+
+/* ----------------------------------------------------
+
+Je souhaite positionner illustration et article côte à côte.
+Consigne:
+	1 - Sachant que la largeur de la div# est de 960px,
+	attribuer une dimension (width) à l'illustration et l'article. 
+	L'objectif étant d'obtenir 2 colonnes. 
+	Une colonne pour l'illustration et une pour l'article. 
+
+	2 - A l'aide du positionnement FLOAT, positionner l'illustration
+	et l'article côte à côte. 
+
+	3 - Le texte de mon article devra être en Arial et justifié. 
+
+-------------------------------------------------------*/
+
+#contenu {
+	width: 100%;
+	float: left;
+}
+
+
+/* Methode 1 */
+#illustration {
+	width: 460px;
+	height: auto;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 8px 0;
+}
+
+#article {
+	width: 480px;
+	height: auto;
+	float: left;
+	margin-bottom: 10px;
+	padding: 8px 0;
+
+}
+
+#illustration img {
+	max-width: 450px;
+}
+
+/* Methode 2 
+#illustration {
+	width: 50%;
+	height: auto;
+	float: left;
+}
+
+#article {
+	width: 50%;
+	height: auto;
+	float: left;
+}
+
+#illustration img {
+	max-width: 100%
+}
+*/
+
+
+/* -----------------------------------------
+Methode 3 AVEC VALEUR CALC !!!!
+--------------------------------------------
+#illustration {
+	width: calc((100%/2) - 20px);
+	height: auto;
+	float: left;
+}
+
+#article {
+	width: calc((100%/2) - 20px);
+	height: auto;
+	float: left;
+}
+
+#illustration img {
+	max-width: 100%
+}
+
+*/ 
+
+#article p {
+	font-family: 'Dosis', sans-serif;
+	text-align: justify;
+}
+
+.BandeauDuHaut {
+	width: 960px;
+	height: 220px;
+	background-image: url(../img/bandeau3.png);
+	/*position: relative;  J'ai enlevé le logo */
+}
+
+/* J'ai enlevé le logo
+.logo {
+	position: absolute;
+	top: 90px;
+	left: 25px;
+}
+*/
+
+.footer {
+	float: left;
+	height: 180px;
+	width: 100%;
+	background-color: #242832;
+	margin-top: 10px;
+	color: white;
+}
+
+.footer a {
+	color: white;
+}
+
+#gmap, #newsletter, #contact {
+	float: left;
+	width: 310px;
+	margin: 10px 0 0 10px;
+}
+h3 {
+	margin:0px;
+}
+
+.newsletter {
+	border: 1px solid white;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 10px;
+	height: 135px
+}
+
+.email, .nom, .prenom, .submit {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
