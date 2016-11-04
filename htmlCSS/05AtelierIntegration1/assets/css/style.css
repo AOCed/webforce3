@@ -1,0 +1,433 @@
+/* GENERAL */
+
+body {
+    background: url(../img/fond.jpg);
+}
+
+/* --------- */
+/* Main Page */
+/* --------- */
+
+main {
+    max-width: 1300px;
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+}
+
+main > p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+main > p span {
+    text-decoration: underline;
+}
+
+
+/*----------------*/
+/*--- HEADER -----*/
+/*----------------*/
+
+header.top {
+    width: 1300px;
+    height: 50px;
+    float: left;
+    margin: auto;
+    background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -5px 11px #000;
+    position: relative;
+    z-index: 1;
+}
+
+.traduction {
+    width:25%;
+    height: 50px;
+    float: left;
+    margin-left: 162px;
+    margin-top:15px;
+}
+
+.traduction p {
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    color: #000;
+    text-transform: uppercase;
+    float:left;
+    margin: 4px 5px 0 0;
+}
+
+/* -----------------------*/
+/* Traduction en Francais */
+/* -----------------------*/
+.fr {
+    width: 28px;
+    height: 19px;
+    float: left;
+    display: block;
+    padding-right: 4px;
+    background: url(../img/drapeau.png) no-repeat;
+    background-position: -72px 0;
+}
+
+.fr span {
+    text-indent: -5000px;
+    display: block;
+}
+
+/* -----------------------*/
+/* Traduction en Anglais */
+/* -----------------------*/
+
+.eng {
+    width: 28px;
+    height: 19px;
+    float: left;
+    display: block;
+    background: url(../img/drapeau.png) no-repeat;
+    background-position: -106px 0;
+}
+
+.eng span {
+    text-indent: -5000px;
+    display: block; 
+}
+
+
+
+/* -----------------------*/
+/* ------- menus -------- */
+/* -----------------------*/
+nav {
+    width: calc(75% - 162px);
+    float: left;
+}
+
+nav ul {
+    float:left;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+nav ul li a {
+    color: #202020;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li.current a {
+    color: #3060a7;
+    text-decoration: underline;
+}
+
+nav ul li.current a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:nth-child(3) a {
+    color: #fe3224;
+}
+
+/* Utilisation de nth-child() 
+   https://developer.mozilla.org/fr/docs/web/css/:nth-child */
+
+
+/* ----------------------------------------*/
+/* ---------- Contenu Page : slide -------- */
+/* -----------------------------------------*/
+section {
+    position: relative;
+}
+
+section .projecteur {
+    width:100%;
+    height:750px;
+    float: left;
+    overflow: hidden;
+}
+
+section .projecteur img.bandeaufine {
+    width: 5px;
+    height: 645px;
+    
+    position: absolute;
+    left:168px;
+    top:11px;
+
+}
+
+section .projecteur ul {
+    width: 339px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+    position: absolute;
+    left:172px;
+    top:0px;
+}
+
+
+section .projecteur ul li {
+    width:339px;
+    background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);
+    float:left;
+    display: inline-block;
+    height: 69px;
+}
+
+section .projecteur ul li:nth-child(2) a {
+    color:#fe3626;
+}
+section .projecteur ul li:nth-child(3) a {
+    color: #bc8242;
+}
+section .projecteur ul li:nth-child(4) a {
+    color: #3860a7;
+}
+section .projecteur ul li:nth-child(5) a {
+    color: #08a640;
+}
+
+
+section .projecteur ul li.img {
+    float:left;
+    width: 339px;
+    height:380px;
+}
+section .projecteur ul li img {
+    
+    position: absolute;
+    top: 34%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+
+section .projecteur ul li a {    
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    
+}
+
+section .projecteur ul li a:hover {
+    text-decoration: underline;
+}
+
+section .projecteur ul li span {
+    font-size: 14px;
+    font-family: 'Roboto condensed';
+    font-style: italic;
+    text-align: center;
+}
+
+/* ---------------------------------------------------*/
+/* ---------- Contenu Page : menu à gauche   -------- */
+
+
+
+
+/* ---------------------------------------------------*/
+/* ---------- Contenu Page : deuxieme bandeau  -------- */
+/* ----------------------------------------------------*/
+
+section .bandeaurouge {
+    width: 100%;
+    height: 50px;
+    float: left;
+    position: relative;
+    background: url(../img/bandeaurouge.png);
+}
+
+section .bandeaurouge img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+/* ---------------------------------------------------*/
+/* ---------- Contenu Page : dernier bandeau  -------- */
+/* ----------------------------------------------------*/
+section .bandeaurose {
+    width: 100%;
+    height: 121px;
+    float: left;
+    position: relative;
+    background: url(../img/bandeaurose.png);
+}
+
+section .bandeaurose p {
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    text-align: center;
+}
+
+section .bandeaurose p span.rouge {
+    color: #fe3224;
+}
+
+section .bandeaurose p span.souligner {
+    text-decoration: underline;
+}
+
+
+
+/* ------------------------------------------------------------*/
+/* ------- Contenu Page : BOUTON dans le dernier bandeau  ----- */
+/* ------------------------------------------------------------*/
+
+.bandeaurose button {
+    width: 346px;
+    height: 37px;
+    background: url(../img/boutonrouge.png);
+    font-size: 18px;
+    font-family: 'Roboto Condensed';
+    font-weight: 100;
+    color: white;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+    
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bandeaurose button::before {
+    content: url(../img/flecheG.png);
+    position: absolute;
+    top: 55%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.bandeaurose button::after {
+    content: url(../img/flecheD.png);
+    position: absolute;
+    top: 55%;
+    left: 130%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ----------------------*/
+/* ------- FOOTER  ----- */
+/* ----------------------*/
+
+
+footer {
+    width:100%;
+    height: 595px;
+    margin-top: 114px;
+    float: left;
+    background: linear-gradient(180deg, #323232 0%, #222222 100%);
+    font-family: 'Roboto Condensed'
+}
+
+footer strong {
+    color: white;
+}
+
+footer .footerpage {
+    width:1000px;
+    margin: auto;
+}
+
+/* -------------------------------*/
+/* ------- FOOTER : contact  ----- */
+/* -------------------------------*/
+
+footer .contact {
+    width: 100%;
+    margin: 50px auto;
+    float: left;
+}
+
+
+
+.coordonnees, .sns, .newsletter {
+    width: calc(100% / 3);
+    float:left;
+}
+
+footer p {
+    color: white;
+    margin:0;
+    padding:0;
+}
+
+footer .sns a {
+    color: white;
+    margin: 20px 0;
+}
+
+footer fieldset .newsletter legend {
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+}
+
+
+/* -------------------------------*/
+/* ------- FOOTER : sitemap  ----- */
+/* -------------------------------*/
+footer .sitemap {
+    width:100%;
+    margin: auto;
+    float:left;
+}
+
+footer .sitemap strong {
+    color: white;
+    text-transform: uppercase;
+}
+
+footer .sitemap ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+footer .sitemap ul li {
+
+}
+footer .sitemap ul a {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+footer .sitemap ul a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer .sitemap .bloc {
+    width: calc(100% / 4);
+    float:left; 
+    padding:20px;
+    box-sizing: border-box;
+}
+
+
+
+
+
