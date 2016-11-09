@@ -14,14 +14,15 @@ h1, h2, h3, h4 {
 	margin:0;
 }
 
-.page {
-	max-width: 1000px;
-	width: 100%;
-	height: auto;
-	margin: 40px auto;
+
+
+
+.container {
+
+
 }
 
-.page > p {
+.container > p {
 	font-family: 'Dosis', sans-serif;
 	text-align: left;
 	color: white;
@@ -38,7 +39,6 @@ h1, h2, h3, h4 {
 	/* Declarer le positionnement */
 	width: 100%;
 	height: 30px;
-	float: left;
 
 	/* Décoration */
 	/*background-image: linear-gradient(180deg, #FFF, #eee);*/
@@ -57,7 +57,7 @@ h1, h2, h3, h4 {
 
 .topHeader p a {
 	text-decoration: none;
-	color: #009800;
+	color: white;
 }
 .topHeader p a:hover {
 	text-decoration: underline;
@@ -69,48 +69,37 @@ h1, h2, h3, h4 {
 ------------------------------------------------*/
 
 header {
-	width: 100%;
-	height: auto;
-	float: left;
+
 	background-color: white;
 /*	border-radius: 8px;*/
-	margin-bottom: 10px;
+
 }
 
-header .logo {
-	width: 20%;
-	height: 180px;
-	float:left;
+header .log {
+
+	background-color: white;
 }
-
-header .logo img {
-	margin-left: 70px;
-	margin-top: 10px;
-}
-
-
-header nav {
-
-
+header .log img {
+	display: block;
+	margin: auto;
 }
 
 header nav ul {
 	text-align: center;
+	list-style: none;
 	margin:0;
 	padding:0;
 }
 
 header nav ul li {
-	display: inline-block;
-	width: 120px;
-	margin-right: 30px;
 	background-color: white;
+	padding: 0;
+	display: block;
 }
 
 header nav ul li a {
 	color: black;
 	text-decoration: none;
-	line-height: 180px;
 	text-transform: uppercase;
 	font-family: 'Dosis', sans-serif;
 	font-size: 18px;
@@ -119,6 +108,7 @@ header nav ul li a {
 header nav ul li a:hover, 
 header nav ul li.current a {
 	color: #88b388;
+	text-decoration: none;
 }
 
 /* Pour mettre la couleur dans toute l'espace de li, faut ajouter display:block */
@@ -130,34 +120,23 @@ header nav ul li a:hover {
 }
 
 /* ---------------------------------------------
---------------------- Bandeau -------------------
+--------------------- Slider -------------------
 ------------------------------------------------*/
-.bandeau {
-	width: 100%;
-	height: auto;
-	float: left;
-	background-attachment: fixed;
+.carousel-inner img {
+	display:block;
+	margin: auto;
 }
 
-/* Pour que l'image prenne automatiquement la largeur de l'écran donné */
-/* VW : viewport width */
-/* VH : viewport height - responsive quelque soit le device */
-.bandeau img {
-	width:100%;
-}
+
 
 /* ---------------------------------------------
 ------- Section: Zone de contenu ---------------
 ------------------------------------------------*/
 section {
-	width:100%;
-	height: auto;
-	float: left;
+
 }
 
 section aside {
-	width:50%;
-	float:left;
 
 	border-radius: 8px;
 	padding: 13px;
@@ -175,9 +154,6 @@ aside p {
 }
 
 section article {
-	width:50%;
-	height: auto;
-	float:left;
 
 
 	border-radius: 8px;
@@ -265,14 +241,9 @@ article p {
 ------------------------------------------------*/
 
 footer {
-	width: 100%;
-	height: auto;
-	float:left;
 	background-color: white;
 }
-footer .page {
-	margin-top:0;
-}
+
 address {
 	font-size: 14px;
 	font-style: normal;
@@ -283,29 +254,20 @@ fieldset {
 	border-color: #88b388;
 }
 .gmap {
-	width:300px;
-	height: auto;
-	float: left;
-	padding:10px;
+
 }
 
 .newsletter {
-	width:300px;
-	height: auto;
-	float: left;
-	padding:10px;
+
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
 	border-radius: 5px;
 }
 
 .contact {
-	width:300px;
-	height: auto;
-	float: left;
-	padding:10px;
+
 	text-transform: uppercase;
-	padding-left: 40px;
+
 }
 
 .contact a {
@@ -318,8 +280,6 @@ fieldset {
 }
 
 #copyright {
-	width: 100%;
-	float:left;
 	background-color: #88b388;
 }
 #copyright p {
@@ -327,6 +287,7 @@ fieldset {
 	font-family: 'Dosis', sans-serif;
 	font-size: 14px;
 	color: white;
+	margin-top: 10px;
 
 }
 
@@ -373,11 +334,6 @@ fieldset {
 
 /* --------------------------------------------------------
 -------------------------------------------------------*/
-
-
-.video {
-	float:left;
-}
 
 
 
