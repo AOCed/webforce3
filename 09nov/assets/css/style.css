@@ -1,0 +1,144 @@
+body {
+	font-family: 'Dosis';
+	text-align: center;
+}
+p {
+	padding:0;
+	margin: 0;
+}
+main {
+	padding: 24px auto;
+}
+
+header p {
+	color: white;
+}
+
+.menu li a {
+	color:white;
+	background-color: #0A0908;
+}
+
+.menu li a:hover {
+	color:white;
+	background-color: #BAD1CD;
+}
+
+.bandeau {
+	background-image: url(../img/bandeau.jpg);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	padding: 70px 0;
+}
+
+.bandeau h1 {
+	text-align: center;
+	margin:0 auto;
+	color:white;
+	font-size: 68px;
+	text-transform: uppercase;
+}
+
+.container > h1 {
+	text-align: center;
+}
+
+.fruit img {
+
+	/* Filtre CSS */
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+
+    /* Transition CSS */
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.fruit img:hover {
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.fruit p, .legume p {
+	color: black;
+}
+
+.legume img {
+
+	/* Filtre CSS */
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+
+    /* Transition CSS */
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.legume img:hover {
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+
+.container-full .footer {
+	background-color: #BAD1CD;
+	padding-bottom: 10px;
+}
+
+.glyphicon {
+	font-size: 20px;
+}
+
+
+
+
+/* Media Query pour modifier le contenu selon la taille d'ecran */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {   
+    img {
+        width: 80%;
+        display: block;
+        margin: 20px auto 20px auto;
+    }
+    .bandeau h1 {
+    	font-size: 56px;
+    }
+    .bandeau p {
+    	font-size: 16px;
+    	margin:0;
+    	padding:0;
+    	color:white;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    img {
+        width: 60%;
+        display: block;
+        margin: 20px auto 20px auto;
+    }
+    .bandeau h1 {
+    	font-size: 40px;
+    }
+	footer h3 {
+		font-size: 32px;
+	}
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
