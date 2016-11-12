@@ -1,0 +1,271 @@
+/* --------------------------- */
+/* ---------- General -------- */
+/* ----------------------------*/
+
+
+
+
+
+/* --------------------------- */
+/* ---------- HEADER  -------- */
+/* ----------------------------*/
+.top-header {
+    height:750px;
+    background: url(../img/bgheader.png);
+}
+
+
+.top-menu {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.75);
+    margin: 0 auto;
+    width: 1170px;
+    height:100px;
+    padding-top: 45px;
+}
+
+
+.menu-list ul li a {
+    text-transform: uppercase;
+    font: 700 13px 'Raleway';
+    color: rgba(255, 255, 255, 0.75);
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: underline;
+    background-color:unset;
+}
+
+nav nav-pills>li {
+    text-align: center;
+}
+
+
+.top-pitch {
+    width: 48%;
+    margin: 128px auto;
+    text-align: center;
+}
+
+.top-pitch h1 {
+    font: 700 65px / 71px 'Open Sans';
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.top-pitch p {
+    font: 400 22px / 33px Raleway;
+    color: #ffffff;
+}
+
+button {
+    margin:auto;
+    background: url(../img/button.png);
+    color: #ffffff;
+    padding: 18px 50px;
+    font: 100 13px 'Raleway';
+    text-transform: uppercase;
+    border: 0;
+    margin-top: 77px;
+    margin-bottom: 156px;
+
+}
+
+/* --------------------------- */
+/* ---------- FEATURE -------- */
+/* ----------------------------*/
+.feature {
+    margin:100px auto;
+}
+.feature img {
+    display: block;
+    margin:0 auto;
+}
+.feature h2 {
+    font: 700 14px 'Raleway';
+    text-transform: uppercase;
+    text-align: center;
+}
+.feature p {
+    font: 400 14px 'Raleway';
+    text-align: center;
+}
+
+
+
+/* --------------------------- */
+/* ---------- Photo  -------- */
+/* ----------------------------*/
+.remove-pad {
+    padding:0;
+}
+.remove-mar {
+    margin:0;
+}
+
+img.photo:hover {
+    background: url(../img/red.png);
+
+    
+}
+
+/* --------------------------- */
+/* ---------- Team  -------- */
+/* ----------------------------*/
+
+.team {
+    margin:50px auto;
+}
+.team h2 {
+    font: 400 22px 'Raleway';
+}
+.team p {
+    font: 400 14px 'Raleway';
+    color: #6c7279;
+}
+p.metier {
+    font: 400 13px 'Raleway';
+    color:#e84545;
+}
+
+.sns {
+    border: 1px solid lightgray;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.sns>img {
+
+
+}
+
+
+
+/* ------------------------------- */
+/* ---------- Testimonial  -------- */
+/* --------------------------------*/
+.testimonial {
+    height:500px;
+}
+.testimonial-img {
+
+}
+.testimonial-right {
+    height:500px;
+    background-color: #53354a;
+}
+
+.testimonial-right h3 {
+    font: italic 36px Cardo;
+    color: #ffffff;
+    
+}
+
+.testimonial-right p {
+    color: #ffffff;
+    font: 700 13px 'Raleway';
+}
+
+
+/* ------------------------------- */
+/* ----------- download  --------- */
+/* --------------------------------*/
+.download h3 {
+    font: 300 28px 'Raleway';
+    color: #2d3033;
+    text-align: center;
+        margin-top: 100px;
+}
+
+.download p {
+    font: 700 13px 'Raleway';
+    color: #2d3033;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.download button {
+    background-color: #e84545;
+    margin-bottom: 100px;
+
+}
+
+/* ------------------------------- */
+/* ------------ FOOTER  ---------- */
+/* --------------------------------*/
+.contact {
+    height:250px;
+    background-color: #3a3e64;
+    padding: 50px 120px;
+}
+.contact h3 {
+    font: 700 14px 'Raleway';
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.location p {
+    font: 400 14px 'Raleway';
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.share {
+    text-align: center;
+}
+.share .sns {
+    border: 1px solid #ffffff;
+}
+.share .sns img {
+    color:#ffffff;
+}
+
+.copyright {
+    height: 94px;
+    background-color: #313454;
+}
+
+.copyright p {
+    font: 400 14px 'Raleway';
+    color: #808080;
+    text-align: center;
+    padding-top: 24px; 
+}
+.copyright span {
+    color:#ffffff;
+    text-align: center;
+}
+
+.about p {
+    text-align: center;
+    font: 400 14px 'Raleway';
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+
+/* Media Query pour modifier le contenu selon la taille d'ecran */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {   
+	
+	
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
