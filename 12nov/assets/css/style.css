@@ -4,8 +4,6 @@
 
 
 
-
-
 /* --------------------------- */
 /* ---------- HEADER  -------- */
 /* ----------------------------*/
@@ -33,11 +31,14 @@
     text-decoration: underline;
     background-color:unset;
 }
-
-nav nav-pills>li {
-    text-align: center;
+.nav {
+    text-align: right;
 }
 
+.nav-pills>li {
+    float: none;
+    display: inline-block;
+}
 
 .top-pitch {
     width: 48%;
@@ -54,18 +55,18 @@ nav nav-pills>li {
 .top-pitch p {
     font: 400 22px / 33px Raleway;
     color: #ffffff;
+    margin-bottom: 77px;
 }
 
-button {
-    margin:auto;
-    background: url(../img/button.png);
+.top-pitch a {
+    background-color: #e84545;
     color: #ffffff;
     padding: 18px 50px;
-    font: 100 13px 'Raleway';
+    font: 600 13px 'Raleway';
     text-transform: uppercase;
+    text-align: center;
+    margin-top: 174px;
     border: 0;
-    margin-top: 77px;
-    margin-bottom: 156px;
 
 }
 
@@ -81,11 +82,13 @@ button {
 }
 .feature h2 {
     font: 700 14px 'Raleway';
+    color: #2d3033;
     text-transform: uppercase;
     text-align: center;
 }
 .feature p {
-    font: 400 14px 'Raleway';
+    font:400 14px 'Raleway';
+    color: #6c7279;
     text-align: center;
 }
 
@@ -101,11 +104,15 @@ button {
     margin:0;
 }
 
-img.photo:hover {
-    background: url(../img/red.png);
 
-    
+a img.photo:hover {
+/*    opacity: 0.5;*/
+/*    background-color: #e84545;*/
 }
+
+
+
+
 
 /* --------------------------- */
 /* ---------- Team  -------- */
@@ -116,6 +123,7 @@ img.photo:hover {
 }
 .team h2 {
     font: 400 22px 'Raleway';
+    color: #2d3033;
 }
 .team p {
     font: 400 14px 'Raleway';
@@ -147,16 +155,17 @@ p.metier {
 .testimonial {
     height:500px;
 }
-.testimonial-img {
 
-}
-.testimonial-right {
-    height:500px;
+div.testimonial-right {
+    height: 500px;
     background-color: #53354a;
+    padding-top: 114px;
+    padding-left: 85px;
 }
 
 .testimonial-right h3 {
-    font: italic 36px Cardo;
+    width:500px;
+    font: italic 36px 'Cardo';
     color: #ffffff;
     
 }
@@ -170,24 +179,29 @@ p.metier {
 /* ------------------------------- */
 /* ----------- download  --------- */
 /* --------------------------------*/
+.download {
+    margin:100px auto;
+    text-align: center;
+}
+
 .download h3 {
     font: 300 28px 'Raleway';
     color: #2d3033;
-    text-align: center;
-        margin-top: 100px;
 }
 
 .download p {
     font: 700 13px 'Raleway';
     color: #2d3033;
     text-transform: uppercase;
-    text-align: center;
+    margin-bottom: 40px;
 }
 
-.download button {
+.download a {
     background-color: #e84545;
-    margin-bottom: 100px;
-
+    color: #ffffff;
+    font: 600 13px 'Raleway';
+    padding:18px 83px;
+    text-transform: uppercase;
 }
 
 /* ------------------------------- */
