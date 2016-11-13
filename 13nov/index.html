@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- L'encodage de la page   -->
+    <meta charset="UTF-8">
+    <!-- Titre du site   -->
+    <title>Portland UI Shop</title>
+    
+    <!-- Pour Internet Explorer: s'assurer qu'il utilise la dernière version du moteur de rendu  -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    
+    <!-- Pour mobile: Affichage sans zoom sur les mobiles (initial scale=1 veut dire que c'est sans zoom") -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Boostrap CSS   -->
+    <!-- Latest compiled and minified CSS -->
+     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+     
+    <!--  google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    
+    <!-- Fontawesome  -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+    <!-- Feuile de style   -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <!-- HTML5 SHIV : Polyfill  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+       <header class="container-full">
+           <nav class="top-header">
+               <div class="row">
+                    <div class="dropdown col-xs-2">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <img src="assets/img/Menu-Icon.png">
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Devices</a></li>
+                          <li><a href="#">Delivery &amp; Payment</a></li>
+                          <li><a href="#">Guarantee</a></li>
+                          <li><a href="#">About Us</a></li>
+                      </ul>
+                    </div>
+                    
+                   <div class="logo col-md-2">
+                       <img src="assets/img/logo.png" alt="logo">
+                   </div>
+                   <div class="menu col-md-4">
+                       <ul class="nav nav-pills">
+                          <li role="presentation"><a href="#">Home</a></li>
+                          <li role="presentation"><a href="#">Devices</a></li>
+                          <li role="presentation"><a href="#">Delivery &amp; Payment</a></li>
+                          <li role="presentation"><a href="#">Guarantee</a></li>
+                          <li role="presentation"><a href="#">About Us</a></li>
+                        </ul>
+                   </div>
+                   <div class="cart col-md-2">
+                       <img src="assets/img/Shopping-Cart-Icon.png">
+                       <span>CART</span>
+                       <img src="assets/img/Badge.png">
+                   </div>
+                   <div class="login col-md-2">
+                       <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+                   </div>
+                </div>
+           </nav>
+           <div class="sub-header">
+            <div class="row">
+            <div class="col-md-6">
+             <div class="sub-menu">
+              <ul class="nav nav-pills">
+                  <li role="presentation"><a href="#">Top sales</a></li>
+                  <li role="presentation"><a href="#">Brand focus</a></li>
+                  <li role="presentation"><a href="#">Hi-tech</a></li>
+                  <li role="presentation"><a href="#">Best sellers</a></li>
+                  <li role="presentation"><a href="#">Projects</a></li>
+                  <li role="presentation"><a href="#">Support</a></li>
+              </ul> 
+              </div>
+               </div> 
+               <div class="col-md-6">
+                 <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <img src="assets/img/Search-Icon.png">
+                        </button>
+                      </span>
+                      <input type="text" class="form-control" placeholder="I'm looking for...">
+                    </div>
+                </div>
+                </div> 
+           </div>
+       </header>
+ 
+        <!--  Slider   -->
+    
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="assets/img/Placeholder.png">
+              <div class="carousel-caption">
+                <p class="title">iPhone 6 32Gb Black</p>
+                <p>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+       </div>
+    
+    
+    
+    
+    
+    
+
+        <!-- Ces dernières lignes ne sont pas obligatoires. -->
+        <!-- jQuery   -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Boostrap JS : Latest compiled and minified JavaScript qu'on met à la fin de Body -->
+        <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

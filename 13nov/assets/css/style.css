@@ -1,0 +1,152 @@
+/* ############################################################ */
+/* ######################     GENERAL    ###################### */
+/* ############################################################ */
+a {
+    font: 400 11px 'Montserrat';
+    color: #b9bed1;
+    text-transform: uppercase;
+}
+
+ul {
+  
+}
+
+
+/* ############################################################ */
+/* ######################     HEADER    ###################### */
+/* ############################################################ */
+
+
+
+/* ############################################################ */
+/* ######################   TOP HEADER   ###################### */
+/* ############################################################ */
+nav {
+    height: 90px;
+}
+nav .top-header {
+    margin: auto;
+    padding:40px 0;
+    background-color: #ffffff;
+}
+
+
+nav li a, .cart span {
+    color: #343e5b;
+    font: 400 14px 'Montserrat';
+    text-transform: uppercase;
+}
+
+.nav>li>a:hover {
+    background-color: unset;
+    text-decoration: underline;
+}
+
+
+.logo {
+    text-align: center;
+    margin-top: 25px;
+}
+.menu {
+    text-align: center;
+    margin-top: 20px;   
+}
+.cart {
+    text-align: center;
+    margin-top: 25px;
+    padding: 0;
+}
+.login {
+    margin-top: 15px; 
+    padding: 0;
+}
+.login button {
+    font: 400 11px 'Montserrat';
+    color: #343e5b;
+    text-transform: uppercase;
+}
+
+
+
+.dropdown {
+    height: 90px;
+    text-align: right;
+    border-right: 1px solid lightgray;
+}
+.btn-default {
+    border: none;
+}
+
+
+
+/* ############################################################ */
+/* ######################   SUB HEADER   ###################### */
+/* ############################################################ */
+div.sub-header {
+    height: 56px;
+    border-top: 1px solid lightgray;
+}
+
+div.sub-menu {
+    margin-left: 242px;
+}
+
+
+.nav>li>a:hover {
+    background-color: unset;
+    text-decoration: underline;
+}
+
+.input-group {
+    margin-right: 220px;
+}
+.input-group .form-control {
+    width:40%;
+    float: right;
+}
+.input-group .form-control:last-child {
+    border:0;
+}
+
+
+
+/* ############################################################ */
+/* ######################   CAROUSEL    ###################### */
+/* ############################################################ */
+
+
+.carousel-inner img {
+    width: 100%;
+}
+
+
+
+
+
+/* ############################################################ */
+/* ######################   MEDIA QUERY  ###################### */
+/* Media Query pour modifier le contenu selon la taille d'ecran */
+/* ############################################################ */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {   
+	
+	
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
