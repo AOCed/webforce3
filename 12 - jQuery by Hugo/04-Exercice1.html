@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 04 avec jQuery !</title>
+</head>
+<body>
+    
+    <form>
+        <input type="text" placeholder="Nom et Prénom" id="nomcomplet">
+        <input type="button" id="submit" value="Je Valide" />
+    </form>
+    
+    <!-- CONSIGNE : Avec l'aide de jQuery, vous devrez :
+    
+        1. Au clic sur le bouton, cacher le formulaire
+        2. Créer un élément <p>
+        3. Dans cet élément, afficher : Bonjour <nomcomplet> correspondant au nom saisie dans le formulaire.
+     
+    -->
+  
+    <!-- Intégration de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <!-- Mon Fichier JS -->
+    <script>
+        // -- Version Javascript
+        var button = document.getElementById("submit");
+        button.addEventListener('click', function(e) {
+            // -- Fonction executée lors du clic sur le bouton 
+        });
+        
+        // -- Version jQuery
+        $(function() {
+            // -- DOM READY !
+            $("#submit").on('click', function(e) {
+                // -- En 1 ligne, j'ai obtenu le même résultat que javascript en 2 lignes.
+                
+                    // -- 1.
+                    $('form').fadeOut();
+
+                    // -- 2 & 3.
+                    $("<p></p>").text("Bonjour " + $("#nomcomplet").val() + " !").appendTo($('body'));
+                
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

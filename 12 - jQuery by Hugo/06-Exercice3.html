@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 04 avec jQuery !</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <style>
+        main {
+            width: 900px;
+            height: auto;
+            margin: 0 auto;
+        }
+        section {
+            width: 100%;
+            height: auto;
+            min-height: 200px;
+            margin-bottom: 10px;
+            background-image: linear-gradient(0deg, #EEE 0%, #FFF 100%);
+            border:1px solid #EEE;
+        }
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-weight: normal;
+            text-align: center;
+            color: #000;
+        }
+        article {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            padding: 20px;
+        }
+        input[type=text] {
+            width: 100%;
+            height: 30px;
+            background-image: linear-gradient(0deg, #EEE 0%, #FFF 100%);
+            border:1px solid #EEE;
+            font-family: 'Roboto Slab', serif;
+            font-size: 14px;
+            text-indent: 10px;
+            margin-bottom: 10px;
+        }
+        mark{
+            background: orange;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <input type="text" placeholder="Saisissez un terme à surligner..." id="markjs">
+    </main>
+    
+    <!-- CONSIGNE : Avec l'aide de jQuery, vous devrez :
+    
+       1. Définir une structure HTML5 & CSS3 pour afficher des articles.
+       
+       2. Afficher une liste d'articles à partir de l'API :  https://jsonplaceholder.typicode.com/posts
+       
+       3. BONUS : Afficher uniquement les 10 premiers articles.
+       
+       4. BONUS : Mettre en Place Markjs.io afin de surligner des mots dans les différents articles à l'aide d'un champs input.
+     
+    -->
+  
+    <!-- Intégration de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    
+    <!-- Intégration de MarkJS.io -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.4.0/jquery.mark.js"></script>
+    
+    <script>
+        
+        l = function(d) {
+            console.log(d);
+        }
+        
+        $(function() {
+            // -- DOM READY !
+            
+            // -- 1. Récupération de mes articles
+            $.getJSON('https://jsonplaceholder.typicode.com/posts', function(resultat) {
+                l(resultat);
+                
+                // -- A. 1ère Solution :: La Boucle for
+                /*for(i = 0 ; i < 5 ; i++) {
+                    $('<section>').append($('<header>').append($('<h1>').text(resultat[i].title))).append($('<article>').html(resultat[i].body)).appendTo($('main'));
+                }*/
+                
+                // -- B. 2ème Solution :: La Boucle each
+                $.each(resultat, function(indice, valeur) {
+                    $('<section>').append($('<header>').append($('<h1>').text(valeur.title))).append($('<article>').html(valeur.body)).appendTo($('main'));
+                    
+                    if(indice == 5) {
+                        return false;
+                    }
+                    
+                });
+                
+            });
+            // -- Mark JS
+            $('#markjs').on('input', function(e) {
+               // -- Cette fonction va s'executer a chaque fois que l'utilisateur va lever son doigt d'une touche du clavier. Quelle qu'elle soit. 
+                
+                    // -- Récupérer la valeur saisie par l'utilisateur
+                    var keyword = $('#markjs').val();
+                    
+                    // -- https://markjs.io/#mark & https://markjs.io/#unmark
+                    $('section').unmark().mark(keyword);
+            });
+        });    
+    
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

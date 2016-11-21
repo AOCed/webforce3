@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Animations en jQuery !</title>
+    <style>
+        .box {
+            padding: 10px;
+        }
+        .carre {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: #09f;
+        }
+    </style>
+</head>
+<body>
+   
+   <!-- CONSIGNE : 
+   
+    Avec l'aide de animate() en jQuery :
+   
+       1. Au clic sur le bouton, déplacer sur la droite le carré de 250px;
+       2. Augmenter sa taille de 150px;
+       3. Enclencher une alerte a la fin de l'animation.
+   
+   -->
+   
+    <div class="box">
+        <p>
+            <button id="play">Lancer</button>
+        </p>
+        <div class="carre"></div>
+    </div>
+   
+   
+    <!-- Intégration de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    
+    <script>
+        // -- LOGIQUE :
+        $(function() {
+        
+            // -- A. Récupérer l'évènement "click" sur le bouton
+            $('#play').click(function() {
+                
+                // -- B. Executer l'Animation sur la classe "carre" avec l'aide de .animate()
+                $('.carre').animate({
+                    left:  '250px',
+                    width: '+=150px'
+                }, 500, function() {
+                    alert('Fin de mon Animation !');
+                });
+                
+                // -- En plus : Je peux faire s'executer plusieurs animations les unes à la suite des autres.
+                
+                // -- queue : false va me permettre de ne pas placer l'animation dans la file d'attente, mais de l'executer en meme temps que les autres. a True, elle s'executera après que les autres animations se terminent.
+                
+                // -- http://api.jquery.com/animate
+                
+            });
+            
+        });
+            
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

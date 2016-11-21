@@ -1,0 +1,39 @@
+*{
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 1.6em;
+	font-family: sans-serif;
+	color: #fff;
+}
+ul,ol{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+h1,h2,h3,h4{
+	font-weight: lighter;
+}
+
+#monDiv {
+	background-color: #f00;
+	width:60%;
+	padding: 20px;
+	margin: 100px auto;
+}
+.maClass {
+	background-color:#00f;
+	width:48%;
+	height:200px;
+	margin:1%;
+	display:inline-block;
+	vertical-align: top;
+}
