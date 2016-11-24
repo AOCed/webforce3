@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/ressources.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<form action="index.html" id="test" method="get">
+		<input type="text" name="tutu" placeholder="ville de départ"><!-- 
+		 --><input type="text" name="toto" placeholder="ville d'arrivé"><!-- 
+		 --><input type="text" name="tata" placeholder="date de départ"><!-- 
+		 --><input type="text" name="pouet" placeholder="date d'arrivé"><!-- 
+		 --><input type="text" name="pouet" placeholder="text 05"><!-- 
+		 --><input type="text" name="pouet" placeholder="text 06"><!--
+		  --><p>
+			  <label for="amount">Price range:</label>
+			  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;" name="range" placeholder="€75 - €300">
+			</p><!-- 
+			 --><div id="slider-range"></div><!--
+		 --><input type="submit" value="GO">
+	</form>
+	<div id="listeVol">
+			<ul id="listeBillets">
+				<li>
+					<div>
+						<span class="companiePrix">460 €</span>
+						<span class="companieName" style="background:url(img/TK-TurkishAirlines.svg)no-repeat 10px center; background-size: auto 65%">Turkish Air</span>
+						<span class="companie">CDG 13:15</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>1 escale 35h40</span>
+						</p><!-- 
+						 --><span class="companie">NRT 08:55</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/TK-TurkishAirlines.svg)no-repeat 10px center; background-size: auto 65%">Turkish Air</span>
+						<span class="companie">NRT 22:25</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>1 escale 20h00</span>
+							</p><!-- 
+						 --><span class="companie">CDG 10:25</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">581 €</span>
+						<span class="companieName" style="background:url(img/AZ-Alitalia.svg)no-repeat 10px center; background-size: auto 65%">Alitalia</span>
+						<span class="companie">CDG 09:35</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>1 escale 17h15</span>
+						</p><!-- 
+						 --><span class="companie">NRT 10:50</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/AZ-Alitalia.svg)no-repeat 10px center; background-size: auto 65%">Alitalia</span>
+						<span class="companie">NRT 14:10</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>1 escale 16h10</span>
+							</p><!-- 
+						 --><span class="companie">CDG 22:20</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">882 €</span>
+						<span class="companieName" style="background:url(img/NH-AllNipponAirways.svg)no-repeat 10px center; background-size: auto 65%">All Nippon</span>
+						<span class="companie">CDG 20:35</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>direct, 11h55</span>
+						</p><!-- 
+						 --><span class="companie">HND 16:30</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/NH-AllNipponAirways.svg)no-repeat 10px center; background-size: auto 65%">All Nippon</span>
+						<span class="companie">HND 12:50</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>1 escale 14h35</span>
+							</p><!-- 
+						 --><span class="companie">CDG 19:25</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">1719 €</span>
+						<span class="companieName" style="background:url(img/AF-AirFrance.svg)no-repeat 10px center; background-size: auto 65%">Air France</span>
+						<span class="companie">CDG 23:25</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>direct, 12h00</span>
+						</p><!-- 
+						 --><span class="companie">NRT 19:25</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/AF-AirFrance.svg)no-repeat 10px center; background-size: auto 65%">Air France</span>
+						<span class="companie">HND 00:30</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>direct, 13h00</span>
+							</p><!-- 
+						 --><span class="companie">CDG 05:30</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">460 €</span>
+						<span class="companieName" style="background:url(img/TK-TurkishAirlines.svg)no-repeat 10px center; background-size: auto 65%">Turkish Air</span>
+						<span class="companie">CDG 13:15</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>1 escale 35h40</span>
+						</p><!-- 
+						 --><span class="companie">NRT 08:55</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/TK-TurkishAirlines.svg)no-repeat 10px center; background-size: auto 65%">Turkish Air</span>
+						<span class="companie">NRT 22:25</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>1 escale 20h00</span>
+							</p><!-- 
+						 --><span class="companie">CDG 10:25</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">581 €</span>
+						<span class="companieName" style="background:url(img/AZ-Alitalia.svg)no-repeat 10px center; background-size: auto 65%">Alitalia</span>
+						<span class="companie">CDG 09:35</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>1 escale 17h15</span>
+						</p><!-- 
+						 --><span class="companie">NRT 10:50</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/AZ-Alitalia.svg)no-repeat 10px center; background-size: auto 65%">Alitalia</span>
+						<span class="companie">NRT 14:10</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>1 escale 16h10</span>
+							</p><!-- 
+						 --><span class="companie">CDG 22:20</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">882 €</span>
+						<span class="companieName" style="background:url(img/NH-AllNipponAirways.svg)no-repeat 10px center; background-size: auto 65%">All Nippon</span>
+						<span class="companie">CDG 20:35</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>direct, 11h55</span>
+						</p><!-- 
+						 --><span class="companie">HND 16:30</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/NH-AllNipponAirways.svg)no-repeat 10px center; background-size: auto 65%">All Nippon</span>
+						<span class="companie">HND 12:50</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>1 escale 14h35</span>
+							</p><!-- 
+						 --><span class="companie">CDG 19:25</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">1719 €</span>
+						<span class="companieName" style="background:url(img/AF-AirFrance.svg)no-repeat 10px center; background-size: auto 65%">Air France</span>
+						<span class="companie">CDG 23:25</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>direct, 12h00</span>
+						</p><!-- 
+						 --><span class="companie">NRT 19:25</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/AF-AirFrance.svg)no-repeat 10px center; background-size: auto 65%">Air France</span>
+						<span class="companie">HND 00:30</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>direct, 13h00</span>
+							</p><!-- 
+						 --><span class="companie">CDG 05:30</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">460 €</span>
+						<span class="companieName" style="background:url(img/TK-TurkishAirlines.svg)no-repeat 10px center; background-size: auto 65%">Turkish Air</span>
+						<span class="companie">CDG 13:15</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>1 escale 35h40</span>
+						</p><!-- 
+						 --><span class="companie">NRT 08:55</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/TK-TurkishAirlines.svg)no-repeat 10px center; background-size: auto 65%">Turkish Air</span>
+						<span class="companie">NRT 22:25</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>1 escale 20h00</span>
+							</p><!-- 
+						 --><span class="companie">CDG 10:25</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">581 €</span>
+						<span class="companieName" style="background:url(img/AZ-Alitalia.svg)no-repeat 10px center; background-size: auto 65%">Alitalia</span>
+						<span class="companie">CDG 09:35</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>1 escale 17h15</span>
+						</p><!-- 
+						 --><span class="companie">NRT 10:50</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/AZ-Alitalia.svg)no-repeat 10px center; background-size: auto 65%">Alitalia</span>
+						<span class="companie">NRT 14:10</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>1 escale 16h10</span>
+							</p><!-- 
+						 --><span class="companie">CDG 22:20</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">882 €</span>
+						<span class="companieName" style="background:url(img/NH-AllNipponAirways.svg)no-repeat 10px center; background-size: auto 65%">All Nippon</span>
+						<span class="companie">CDG 20:35</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>direct, 11h55</span>
+						</p><!-- 
+						 --><span class="companie">HND 16:30</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/NH-AllNipponAirways.svg)no-repeat 10px center; background-size: auto 65%">All Nippon</span>
+						<span class="companie">HND 12:50</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>1 escale 14h35</span>
+							</p><!-- 
+						 --><span class="companie">CDG 19:25</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span class="companiePrix">1719 €</span>
+						<span class="companieName" style="background:url(img/AF-AirFrance.svg)no-repeat 10px center; background-size: auto 65%">Air France</span>
+						<span class="companie">CDG 23:25</span><!-- 
+						 --><p class="escales">
+							<span><img src="img/icon-flight-legs.png"></span>
+							<span>direct, 12h00</span>
+						</p><!-- 
+						 --><span class="companie">NRT 19:25</span>
+					</div>
+					<div>
+						<a class="openPopup" href="#">+ d'infos</a>
+						<span class="companieName" style="background:url(img/AF-AirFrance.svg)no-repeat 10px center; background-size: auto 65%">Air France</span>
+						<span class="companie">HND 00:30</span><!-- 
+						 --><p class="escales">
+								<span><img src="img/icon-flight-legs.png"></span>
+								<span>direct, 13h00</span>
+							</p><!-- 
+						 --><span class="companie">CDG 05:30</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+</body>
+</html>
