@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular 01</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/angularjs.js"></script>
+	<script type="text/javascript" src="js/mainApp.js"></script>
+</head>
+
+<!-- Déclaration du module pour Angular en charge de l'application de type mono page (la vue) -->
+<body ng-app="test">
+	<div id="conteneurApp" ng-controller="testCtrl">
+		<h1 ng-class="{tutu: changeTitre}">{{titre}}</h1> <!-- Mise en relation entre le scope du controleur et la vue
+		en binding one way: [controleur -> vue} -->
+
+		<!-- le [ng-click="function()"] indique au controlleur qu'il y a un evenement de type clique déclaré dans un objet de la vue et que cette evenement appel un méthode
+	fournie par ce meme controleur -->
+		<a href="#" ng-click="modifTitre(0)">titre01</a>
+		<a href="#" ng-click="modifTitre(1)">titre02</a>
+		<a href="#" ng-click="modifTitre(2)">titre03</a>
+		<a href="#" ng-click="modifTitre(3)">titre04</a>
+
+		<form id="testForm" action="#" ng-submit="testTwoWay($event)">
+			<input type="text" ng-model="formdata">
+		</form>
+
+		<ul id="liste" >
+			<li ng-repeat="item in formtableau">
+				<p>{{item.name}}</p>
+			</li>
+		</ul>
+	</div>
+
+
+
+</body>
+<!-- Fin du module (la fin est déterminée par le conteneur) -->
+
+</html>

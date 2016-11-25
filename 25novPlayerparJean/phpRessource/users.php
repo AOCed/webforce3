@@ -1,0 +1,4 @@
+[
+	{"log":"admin","pass":"root"}
+]
+

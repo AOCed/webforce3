@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="playerApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>SON</title>
+		<link href='http://fonts.googleapis.com/css?family=Exo+2:400,100' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/libs/angularjs.js"></script>
+		<script type="text/javascript" src="js/mainApp.js"></script>
+	</head>
+	<body>
+		<div ng-controller="loginController">
+			<form id="login" name="formulaire" ng-submit="connect()"  ng-class="{formOff : access}">
+				<input type="text" name="login"  placeholder="Login" ng-model="login" />
+				<input type="text" name="password" placeholder="Passe"  ng-model="password" />
+				<input type="submit" value='envoyer'>
+			</form>
+			 <div id="pagePlayer" ng-controller="listeController" ng-class="{pageOn : access}">
+				<!--<div id="lecteur">
+					<audio autoplay>
+						 <source data-ng-src="{{titrePlaySrc}}" type="audio/mp3">
+						 <source src="{{titrePlaySrc}}" type="audio/mp3">
+					</audio>﻿
+				</div>
+				<div id="angular-application">
+					<div id="listePlay" class="conteneurListe">
+						<span class="titreListe">Playlist</span><span class="titreListe">{{nbtitres}} titres</span>
+						<ul class="liste">
+							<li ng-repeat="itemPlay in itemListePlay" ng-click="startPlay($index)">
+								{{itemPlay.titre}}<button class="supprTitre" ng-click="removeTitrePlay($index)">X</button>
+							</li>
+						</ul>
+						<a href="#" id="removeAll" ng-click="removeAllPlay()" ng-class="{btnInOut : suppreBtn}">Vider la liste ?</a>
+					</div>
+					<div class="conteneurListe">
+						<span class="titreListe">selectioner des titres</span>
+						<ul class="liste">
+							<li ng-repeat="item in listemusique" ng-click="addTitrePlay($index)">[ng-repeat="todo in todos"] -> équivalant d'un boucle "foreach" permetant de repeter un affichage : tant qu'il y a d'iteme dans l'objet associé au $scope du controleur,
+												[ng-class="completed : todo.completed"] reference reference a l'item objet courant du tableau todos a sa deuxème propriétée
+								{{item.titre}} 
+							</li>
+						</ul>
+					</div>
+				</div>-->
+			</div> 
+		</div>
+	</body>
+</html>
