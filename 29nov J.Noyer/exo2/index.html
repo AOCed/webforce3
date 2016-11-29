@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulaire Javascript</title>
+
+		<style>
+			body{
+				background: #eee;
+			}
+			select, textarea, input:not([type = "submit"]) {
+				width: 100%;
+				display: block;
+				margin-bottom: 20px;
+			}
+			section {
+				position: absolute;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.5);
+
+				display: none;
+			}
+			article {
+				background-color: white;
+				width: 50%;
+				margin:50px auto 0 auto;
+				padding: 30px;
+				
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+
+			}
+		</style>
+	</head>
+	<body>
+		
+		<section> 
+			<button>X</button>
+			<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo voluptatum excepturi nesciunt alias a error voluptatem hic adipisci, quos quidem odit porro eius saepe. Perspiciatis a doloremque impedit voluptatem aliquam.</article>
+		</section>
+
+		<form action="contact.php">
+			<p></p>
+			<input type="text" name="fullName" placeholder="Indiquez votre nom complet" required>
+			<p></p>
+			<input type="email" name="userEmail" placeholder="Indiquez votre email" required>
+			<p></p>
+			<select name="userGender">
+				<option value="">- Selectionner votre genre -</option>
+				<option value="w">Femme</option>
+				<option value="m">Homme</option>
+				<option value="x">Martien</option>
+			</select>
+
+			<textarea name="userMessage" placeholder="Ajouter votre message"></textarea>
+
+			<input type="submit">
+
+		</form>
+
+		<!--  Intégrer le CDN jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+		<!-- Intégrer le script de la page -->
+		<script src="js/script.js"></script>
+	</body>
+</html>

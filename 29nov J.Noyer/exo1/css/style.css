@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Roboto');
+/*
+    Faire en sorte d'utiliser 1rem = 10px
+    Supprimer toutes les marges
+    Ajouter la police roboto pour toute la page
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #eee;
+}
+
+header{
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+h1 {
+	font-size: 3em;
+}
+h1, section, button, a{
+    font-family: 'Montserrat', serif;
+}
+
+h1 span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: .4em;
+    text-transform: uppercase;
+    display: block;
+
+}
+
+h1:after {
+    content: "";
+    display: inline-block;
+    height: .1rem;
+    width: 5rem;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+li img{
+    width: 5rem;
+}
+
+main{
+    position: relative;
+}
+
+figure{
+    display: inline-block;
+    width: 45%;
+}
+
+section {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+section p {
+    padding: 1rem 2rem;
+
+    -webkit-transform: rotateZ(-15deg);
+    -moz-transform: rotateZ(-15deg);
+    transform: rotateZ(-15deg);
+
+
+    /* Pour l'animation */
+    display: none;
+}
+
+.win{
+    background-color: green;
+}
+
+.lose{
+    background-color: red;
+}
+
+.exaequo{
+    background-color: grey;
+}
+
+article {
+    position: absolute;
+    width: 100%;
+}
+
+button, a{
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border: none;
+    text-decoration: none;
+
+    /* Pour l'animation */
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: .5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
