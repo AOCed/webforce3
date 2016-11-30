@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulaire Homework</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	
+
+
+	<form action="formulaire.php" method="POST" name="formulaire">
+		<!-- Fieldset du form Formulaire -->
+		 <fieldset>
+
+			 <legend>Formulaire</legend>
+		
+				<!-- Champs pour civilité -->
+				<label for="civility">Civilité<sup>*</sup>: </label>
+				<p id="civiliteError"></p>
+				<label for="civiliteFomme">Monsieur</label>
+				<input type="radio" name="civilite" value="m" required>
+				<label for="civiliteFemme">Madame</label>
+				<input type="radio" name="civilite" value="mme" required>
+				
+				<!-- Champs pour nom et prénom -->
+				<p id="nomError"></p>
+				<label for="nom">Nom<sup>*</sup>: </label>
+				<input type="text" name="userNom" required>
+
+				<p id="prenomError"></p>
+				<label for="prenom">Prénom<sup>*</sup>: </label>
+				<input type="text" name="userPrenom" required>
+
+				<!-- Champs pour age -->
+				<p id="ageError"></p>
+				<label for="age">Age <sup>*</sup>: </label>
+				<input type="number" name="userAge" required>
+
+				<!-- Champs pour pays -->
+				<p id="paysError"></p>
+				<label for="pays">Pays <sup>*</sup>: </label>
+				<select name="userPays">
+					<option value="">-selectionner-</option>
+					<option value="france">France</option>
+					<option value="belgique">Belgique</option>
+					<option value="Monaco">Monaco</option>
+					<option value="Luxembourg">Luxembourg</option>
+					<option value="Suisse">Suisse</option>
+					<option value="Allemagne">Allemagne</option>
+					<option value="Italie">Italie</option>
+					<option value="Espagne">Allemagne</option>
+					<option value="Andorre">Andorre</option>
+				</select>
+
+				<!-- Champs pour email adresse -->
+				<p></p>
+				<label for="email">Email<sup>*</sup>: </label>
+				<input type="email" name="userEmail" required>
+
+				<!-- Champs pour mot de passe -->
+				<p></p>
+				<label for="password">Mot de Passe<sup>*</sup>: </label>
+				<input type="password" name="userPassword" required>
+				<input type="password" name="userPassword" required>
+
+				<!-- Champs pour inscrire au newsletter -->
+				<label for="newsletter">Recevoir des e-mail: </label>
+				<input type="checkbox">
+
+				<!-- Bouton d'envoyer le formulaire -->
+				<input type="submit" value="inscrire"> 
+
+		</fieldset> <!-- Fin de Fieldset -->
+
+	</form> <!-- Fin de form -->
+
+
+	<!--  Intégrer le CDN jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<!-- Intégrer le script de la page -->
+	<script src="js/main.js"></script>
+</body>
+</html>

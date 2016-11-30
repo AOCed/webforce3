@@ -1,0 +1,21 @@
+
+* {
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+
+}
+
+fieldset {
+	width:35%;
+	margin: 10px auto;
+
+}
+
+label, select, input {
+	width: 95%;
+	margin:0 auto;
+	display: block;
+	margin-bottom: 5px;
+}
