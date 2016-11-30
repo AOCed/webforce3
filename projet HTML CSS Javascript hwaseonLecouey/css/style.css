@@ -1,0 +1,225 @@
+/*##################*/
+/*#### General #####*/
+/*##################*/
+
+*, h1, h2, h3, p {
+	/* Réinitialiser les margins et paddings */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%; /* Modifier la valeur 1rem = 10px */
+}
+
+body {
+	width: 100%;
+	background: #061339;
+}
+
+/*##################*/
+/*#### Header  #####*/
+/*##################*/
+header {
+	margin:auto;
+}
+header div.home {
+	width: 60%;
+	margin:0 auto;
+
+}
+header div.home p {
+    font-family: 'Merienda', cursive;
+    font-size: 1.3em;
+    color: #FFF;
+    padding: 0.5em 0;
+}
+
+h1 {
+	font-family: 'Merienda', cursive;
+	font-size: 4rem;
+	color: #FFF;
+	padding:2.2em 0;
+	text-align: center;
+}
+
+header div.title {
+	width: 100%;
+	background: url('../img/background.jpg') repeat-x;
+}
+
+
+/*########################*/
+/*##### Main Section #####*/
+/*########################*/
+
+section {
+	background-color:#eee;
+	width: 100%;
+
+}
+section .principal {
+	width:65%;
+	margin:0 auto;
+}
+
+
+/*#########################*/
+/*#### Parti formulaire ###*/
+/*########################*/
+aside {
+	width: 30%;
+	margin:2em auto;
+	display: inline-block;
+	vertical-align: top;
+}
+aside form {
+	width: 70%;
+	margin:0 auto;
+}
+aside fieldset legend {
+	font-family: 'Merienda', cursive;
+	text-align:center;
+	color: #2F4073;
+	border:0;
+}
+aside fieldset {
+	padding:0.5em;
+}
+
+aside fieldset p {
+	color:red;
+}
+aside form input, 
+aside form select,
+aside form textarea {
+	width:100%;
+}
+aside form input[type="submit"] {
+	background-color: green;
+	color:white;
+	border-radius: 5px;
+	border:0;
+}
+
+
+/*########################*/
+/*######## Slide  ########*/
+/*########################*/
+
+div.chatSlide {
+	width: 65%;
+	display: inline-block;
+	margin: 3em 0;
+}
+div.chatSlide img {
+	width: 100%;
+}
+
+/*################################*/
+/*######## Article En bas ########*/
+/*################################*/
+
+article {
+	background-color: #dddddd;
+	width: 100%
+}
+
+article div {
+	width:60%;
+	margin: 0 auto;
+}
+article div h2 {
+	font-family: 'Merienda', cursive;
+	color: #2F4073;
+	padding-top: 1em;
+}
+
+article div p {
+	width:48%;
+	display: inline-block;
+	margin: 1em auto;
+	vertical-align: top;
+	padding-right: 1em;
+}
+article div img {
+	width:48%;
+	display: inline-block;
+	margin: 1em auto;
+	vertical-align: top;
+	padding-right: 1em;
+	padding:0;
+	background: #7885A5;
+
+}
+
+article div img:hover {
+	background-color: #061339;
+}
+
+
+/*########################*/
+/*######## Footer ########*/
+/*########################*/
+
+footer {
+	color:white;
+	text-align: right;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	padding-right:.5em;
+}
+
+
+/*#############################*/
+/*######## Error Script ########*/
+/*##############################*/
+.error {
+	border:1px solid red;
+}
+
+
+/* Requête média (du petit écran au grand écran) */
+
+/* Mobile & Tablette */
+@media screen and (min-width: 200px) and (max-width: 768px) {
+	
+	/* Partie formulaire */
+	aside {
+		width:100%;
+		margin:0;
+	}
+	aside form {
+		width:100%;
+	}
+	legend {
+		font-size: 1.5em;
+		text-align: center;
+		padding:1em;
+		margin:0;
+	}
+	/* Partie Slide */
+	div.chatSlide {
+   		width: 100%;
+   		margin:0;
+	}
+
+	/* Partie Article en Bas */
+	article div h2 {
+		font-size: 1.5em;
+		text-align: center;
+		padding:0.5em 0;
+	}
+	article div p {
+		font-size: 1em;
+		padding:0.5em 0;
+		width: 100%;
+	}
+	article div img {
+		font-size: 1em;
+		width: 100%;
+
+	}
+
+
+}
