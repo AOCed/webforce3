@@ -1,0 +1,89 @@
+/*#####################################"*/
+/* Petit CSS responsive avec media Query */
+/*#####################################"*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%; /* Modifier la valeur 1rem = 10px */
+}
+
+body {
+	background-color: #eee;
+	font-size: 1.5rem; /* égal ===> 1,5 * 62.5% = 15px */
+}
+
+p {
+	margin-bottom: 2rem;
+	letter-spacing: .1rem;
+	color:blue;
+	font-weight: bold;
+}
+
+
+
+
+
+
+/* Requête média (du petit écran au grand écran) */
+@media screen and (min-width: 950px) {
+
+	p {
+		display: inline-block;
+		width: 30%;
+		vertical-align: top;
+		color:red;
+	}
+}
+
+@media print {
+	
+	p{
+		display: none;
+	}
+}
+
+
+
+
+
+
+/* Sélectionner toutes les balises p sauf celle avc la classe test */
+
+/* p:not([class="test"]) {
+	color: red;
+}
+
+Faire en sorte d'aligner les balises p sur une ligne
+p {
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+}
+
+Faire en sorte que toute la balise p num1 soit à la place de la balise p 
+num 3 et inversement
+
+p:first-of-type {
+	position: absolute;
+	right: 0;
+	top:0;
+}
+
+p:last-of-type {
+	position: absolute;
+	left: 0;
+	top:0;
+	background-color: blue;
+}
+p:nth-child(2) {
+	position: relative; 
+	z-index: 1;
+	background-color: red;
+	display: block;
+	margin: auto;
+}
+ */
