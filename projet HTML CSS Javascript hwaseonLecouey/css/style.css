@@ -78,9 +78,11 @@ aside form {
 	width: 70%;
 	margin:0 auto;
 }
-aside fieldset legend {
+aside form fieldset h2 {
 	font-family: 'Merienda', cursive;
+	font-size: 2rem;
 	text-align:center;
+	padding-bottom: 1rem;
 	color: #2F4073;
 	border:0;
 }
@@ -92,6 +94,9 @@ aside fieldset {
 	padding:1em;
 }
 
+aside fieldset label {
+	margin:1rem;
+}
 aside fieldset p {
 	color:red;
 }
@@ -109,6 +114,7 @@ aside form input[type="submit"] {
 aside form select {
 	border-radius: 4px;
 	border: 1px solid #ccc;
+	padding-left:.5rem;
 }
 aside form textarea {
 	border-radius: 4px;
@@ -123,7 +129,7 @@ aside form textarea {
 div.chatSlide {
 	width: 60%;
 	display: inline-block;
-	margin: 3em 0;
+	margin: 2em 0;
 }
 div.chatSlide img {
 	width: 100%;
@@ -139,7 +145,7 @@ article {
 }
 
 article div {
-	width:60%;
+	width:72%;
 	margin: 0 auto;
 }
 article div h2 {
@@ -161,9 +167,8 @@ article div.teteChat {
 	display: inline-block;
 }
 article div img {
-	width:48%;
+	width:100%;
 	display: inline-block;
-	margin: 1em auto;
 	vertical-align: top;
 	padding-right: 1em;
 	padding:0;
@@ -192,8 +197,20 @@ footer {
 /*#############################*/
 /*######## Error Script ########*/
 /*##############################*/
+.errorListe {
+	color:red;
+	margin:0.5rem auto;
+	padding-left:.5rem;
+}
 .error {
-	border:1px solid red;
+	color: red;
+	margin:0.5rem auto;
+	padding-left:.5rem;
+}
+
+.valid {
+	color:green;
+	border-radius: 3px;
 }
 
 
@@ -202,6 +219,11 @@ footer {
 /* Mobile & Tablette */
 @media screen and (min-width: 200px) and (max-width: 768px) {
 	
+	h1 {
+		font-size: 3rem;
+		padding: 1.5em;
+	}
+
 	/* Partie formulaire */
 	aside {
 		width:100%;
@@ -209,8 +231,9 @@ footer {
 	}
 	aside form {
 		width:100%;
+	    margin-top: 1.5rem;
 	}
-	legend {
+	aside form h2 {
 		font-size: 1.5em;
 		text-align: center;
 		padding:1em;
@@ -219,7 +242,7 @@ footer {
 	/* Partie Slide */
 	div.chatSlide {
    		width: 100%;
-   		margin:0;
+   		margin: 2rem auto;
 	}
 
 	/* Partie Article en Bas */
@@ -230,12 +253,14 @@ footer {
 	}
 	article div p {
 		font-size: 1em;
-		padding:0.5em 0;
+		margin: 0 auto;
 		width: 100%;
+		padding:0;
 	}
 	article div img {
 		font-size: 1em;
 		width: 100%;
+		margin: 0 auto;
 
 	}
 	article div.teteChat {

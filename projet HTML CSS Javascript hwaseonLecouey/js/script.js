@@ -7,16 +7,22 @@ $(document).ready(function(){
 		event.preventDefault();
 		var formScore = 0;
 
+		if ($('[name="listeChat"]').val().length === 0){
+			$('select').next().addClass('errorListe').text('Choisissez votre chat.');
+		} else {
+			formScore++;
+		}
 		// Vérifier si les caractères saisis sont minimum 15
 		if ($('[name="raison"]').val().length < 15){
-			$('textarea').addClass('error');
+			$('textarea').next().addClass('error').text('Raison d\'adoption minimum 15 caractères');
 		} else {
 			formScore++;
 		}
 
 		// Envoyer le message de merci lorsque les champs sont bien saisis
-		if (formScore === 1) {
-			alert('Merci d\'avoir rempli le formulaire!');
+		if (formScore === 2) {
+			$('select, textarea, label, [type="submit"]').fadeOut();
+			$('fieldset').fadeIn().addClass('valid').text('Merci d\'avoir rempli le formulaire!');
 		}	
 
 	});
