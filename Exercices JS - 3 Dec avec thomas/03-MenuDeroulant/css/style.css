@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*
+Reset
+*/
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		font-size: 62.5%;
+	}
+
+	body {
+		background: #eee;
+
+		color: #181818;
+		font-family: "Arial", sans-serif;
+		font-size: 1.5rem;
+	}
+
+	main {
+		width: 100rem;
+
+		margin: 4rem auto;
+		padding: 2rem;
+
+		background: #ccc;
+		border-radius: 8px;
+	}
+
+/*
+Barre de navigation
+*/
+
+	header {
+		height: 50px;
+
+		background: linear-gradient(180deg, #212121, #393939);
+	}
+
+	nav {
+		
+	}
+
+	nav ul {
+		width: 1000px;
+
+		margin: 0 auto;
+	}
+
+	nav ul li {
+		position: relative;
+
+		display: inline-block;
+
+		width: 20%;
+		height: 50px;
+
+		line-height: 50px;
+		text-align: center;
+	}
+
+	nav ul li a {
+		display: block;
+
+		background: linear-gradient(180deg, #e7bebe, #d6abab);
+
+		color: #202020;
+		font-family: "Roboto", sans-serif;
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+	
+	nav ul li a:hover, li.active a {
+		background: #d6abab;
+	}
+
+	ul.menuDeroulant {
+		display: none;
+
+		position: absolute;
+		top: 50px;
+		left: 0;
+	}
+
+	ul.menuDeroulant li {
+		position: relative;
+		display: block;
+
+		height: 45px;
+
+		font-size: 0.9em;
+		line-height: 45px;
+		text-align: left;
+		text-indent: 20px;
+	}
+
+	ul.menuDeroulant li a {
+		background: #fff3f3;
+		border-top: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	
+	nav ul.menuDeroulant li a:hover, nav ul.menuDeroulant li.active a {
+		background: #d6abab;
+	}
+
+	ul.menuDeroulant ul.menuDeroulant {
+		top: 0;
+		left: 200px;
+	}
+
+	ul.menuDeroulant ul.menuDeroulant li {
+		font-size: 0.8em;
+	}
+
+	ul.menuDeroulant ul.menuDeroulant li a {
+		background: #fff3f3;
+		border-top: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	
+	nav ul.menuDeroulant ul.menuDeroulant li a:hover {
+		background: #d6abab;
+	}

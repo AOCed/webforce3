@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+
+		<meta charset="utf-8">
+
+		<!-- Forcer IE à utiliser sa dernière version du moteur de rendu -->
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+		<!-- Affichage sans zoom sur les mobiles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				
+		<!-- Ma feuille de style -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- Font-awesome -->        
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<!-- Favicon -->
+		<!-- <link rel="icon" type="x-icon" href="img/favicon.ico"> -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>		
+		<title>Un quizz</title>	
+
+	</head>
+
+	<body>
+
+		<main>
+
+			<!-- Ce paragraphe servira à tenir le compte de l'étape en cours (ex: Question 1/10, Question 2/10, etc) puis, à la fin, on y mettra le résultat final (ex. Vous avez répondu correctement à 6 questions sur 10). Le contenu sera donc généré en JS. -->
+			<p></p>
+			
+			<!-- Début : Formulaire de mon calcul -->
+			<form action="#" method="post">
+				<label for="reponse"></label> 
+				<input type="text" name="reponse" id="reponse" />
+
+				<input type="submit" value="C'est mon dernier mot" />
+								
+			</form><!-- Fin : Formulaire de mon calcul -->
+
+		</main>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		
+		<!-- Javascript Slotmachine -->
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+
+</html>
