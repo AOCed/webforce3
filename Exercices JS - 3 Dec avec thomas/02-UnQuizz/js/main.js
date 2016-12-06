@@ -36,7 +36,7 @@ $(document).ready(function() {
 	var score = 0;
 	var step = 0;
 
-	$('p').html(('Question ') + (step+1)  + 'sur' + questions.length);
+	$('p').html(('Question ') + (step+1)  + ' / ' + questions.length);
 	$('label').text(questions[0]);
 	$('form').submit(function(event){
 		event.preventDefault();
@@ -55,27 +55,30 @@ $(document).ready(function() {
 		if (step < reponses.length-1) {
 			step++;
 
-			$('p').html(('Question ') + (step+1)  + 'sur' + questions.length);
+			$('p').html(('Question ') + (step+1)  + ' / ' + questions.length);
 			$('label').text(questions[step]);
 		} else {
 			// On veut afficher le résultat 
 			$('form').hide();
 
-			var messageResultats = 'Vous avez répondu correctement à ' + score +' sur ' + questions.length + '. </br><br>';
+			var messageResultats = '<strong>Vous avez répondu correctement à </strong>' + score +' sur ' + questions.length + '. </br><br>';
 
 			for (var i = 0; i < errors.length; i++) {
 				if (errors[i] == false) {
 
-					messageResultats += questions[i] + '<br> ' +'<p class="correct"> VRAI </p>'  +'<br>';
+					messageResultats +=  questions[i] + '<br> ' +'<p class="correct"> VRAI </p>'  +'<br>';
 
 				} else {
-					messageResultats += questions[i] + '<br> '+ '<p class="faux"> FAUX </p> '+'la bonne réponse est '+reponses[i]+'<br><br>';
+					messageResultats += questions[i] + '<br> '+ '<p class="faux"> FAUX </p><br>';
 				}
 			}
 
 			$('p').html(messageResultats);
 
+
 		}
+
+
 
 
 	})
