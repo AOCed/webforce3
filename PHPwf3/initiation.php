@@ -86,7 +86,7 @@ displayTitle2("Tableaux et listes");
 * Les Tableaux ou listes
 **/ 
 	$monTab = array(); // Créer un tableau vide	
-	$monTab2 = array("pommes", "poire", 23.5, );// Créer  un tableau avec des valeurs
+	$monTab2 = array("pommes", "poire", 23.5, false);// Créer  un tableau avec des valeurs
 	// pour Débuggagen, on peut afficher le contenu dans le tableau avec 
 	// <pre> montre le contenu tel qu'il est
 	echo "<pre>";
@@ -99,6 +99,11 @@ displayTitle2("Tableaux et listes");
 	echo "<pre>";
 	print_r($monTab3);
 	echo "</pre>";
+
+
+	// Connaitre le nombre d'élément de notre tableau
+	echo "<br>count".count($monTab2);
+	echo "<br>count".sizeof($monTab3);
 
 	// pour récup une valeur d'un tableau
 
