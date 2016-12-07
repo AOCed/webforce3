@@ -36,11 +36,10 @@ function addHToString3($chaine="valeur défaut", $number) {
 
 function maSigneCalChinois($annee) {
 
-	$calChinois = array('rat', 'buffle', 'tigre', 'lapin', 'dragon', 'serpent', 'cheval', 'chèvre', 'singe', 'coq', 'chien', 'cochon');
-	if ($annee%12==0) {
-		return $calChinois[0];
-		$calChinois
-	}
+	$signeChinois = array('singe', 'coq', 'chien', 'cochon', 'rat', 'buffle', 'tigre', 'lapin', 'dragon', 'serpent', 'cheval', 'chèvre');
+	$reste = $annee%12;
+	return $signeChinois[$reste];
+
 }
 
 
