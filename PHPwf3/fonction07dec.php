@@ -34,12 +34,18 @@ function addHToString3($chaine="valeur défaut", $number) {
 // Calendrier chinois
 
 
+
 function maSigneCalChinois($annee) {
 
 	$signeChinois = array('singe', 'coq', 'chien', 'cochon', 'rat', 'buffle', 'tigre', 'lapin', 'dragon', 'serpent', 'cheval', 'chèvre');
 	$index = $annee%12;
-	return $signeChinois[$index];
 
+	if($index < 0) {
+		$index += 12; 
+	}
+	
+	return $signeChinois[$index];
+		
 }
 
 
