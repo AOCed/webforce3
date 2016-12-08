@@ -21,6 +21,6 @@ echo addH2ToString("Ceci est une chaine en h2.");
 echo addH2ToString2("test");
 echo addHToString3("test", 3);
 echo displayH1ToH5("TEST", 5);
-echo maSigneCalChinois(1985);
+echo maSigneCalChinois(1955);
 
 ?>

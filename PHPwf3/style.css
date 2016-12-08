@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+}
+h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+form {
+	width:50%;
+	margin: 2rem auto;
+	text-align: center;
+}
+form label {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2rem;
+
+	width: 100%;
+	display: block;
+	text-align:center;
+	margin:0.5rem;
+}
+input {
+	display: block;
+	margin: auto;
+	padding:1rem;
+	border: 0.1rem solid #e0e0e0;
+	width:20%;
+		border-radius: 0.5rem;
+}
+
+input[type='submit'] {
+	width: 15%;
+	border: 0.1rem solid #e0e0e0;
+	font-family: 'Ubuntu', sans-serif;
+	font-family: 1.5rem;
+	border-radius: 0.5rem;
+	padding:0.5rem;
+	margin:0.5rem auto;
+}
+input[type="submit"]:hover {
+    background-color: black;
+    color:white;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: pink;
+	text-align: center;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: pink;
+	text-align: center;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: pink;
+	text-align: center;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: pink;
+	text-align: center;
+}
+
+form #lar, form #lon {
+	display: inline;
+}
+
+p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5rem;
+	text-align:center;
+	color: red;
+}

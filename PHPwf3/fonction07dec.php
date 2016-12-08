@@ -30,24 +30,37 @@ function addH2ToString2($chaine="valeur défaut") {
 function addHToString3($chaine="valeur défaut", $number) {
 	return "<h".$number.">".$chaine."</h".$number.">";
 }
+function addGrasToString($chaine){
+	return "<strong>".$chaine."</strong>";
+}
+
 
 // Calendrier chinois
 
+function maSigneChinois($annee) {
 
-
-function maSigneCalChinois($annee) {
-
-	$signeChinois = array('singe', 'coq', 'chien', 'cochon', 'rat', 'buffle', 'tigre', 'lapin', 'dragon', 'serpent', 'cheval', 'chèvre');
+	$signeChinois = array('Singe', 'Coq', 'Chien', 'Cochon', 'Rat', 'Buffle', 'Tigre', 'Lapin', 'Dragon', 'Serpent', 'Cheval', 'Chèvre');
 	$index = $annee%12;
 
-	if($index < 0) {
-		$index += 12; 
-	}
+	// si les gens entrent l'année en négatif...
+	// if ($index < 0) $index += 12;
 	
-	return $signeChinois[$index];
+	return "Le signe zodiaque de votre année de naissance ".$annee." est ".addGrasToString($signeChinois[$index]).".";
 		
 }
 
+function aireRectagle($lar, $lon) {
+	$aire = $lar * $lon;
+	return "l'aire du rectagle de largeur et de longueur que vous avez saisi est ".$aire.".";
+}
+
+function bissextile($annee){
+	if (($annee%4 == 0 && $annee%100 !=0) || $annee%400 ==0) {
+		return "Oui, c'est une année bissextile.";
+	} else {
+		return "Non, c'est pas une année bissextile.";
+	}
+} 
 
 
 
