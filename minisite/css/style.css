@@ -46,13 +46,14 @@
 		margin:2rem auto;
 	}
 	input[type='submit'] {
-		width:30%;
+		width:40%;
 		margin: .2rem auto;
 		padding:.5rem 2rem;
 		border:0;
 		border-radius: 3px;
 		background-color: #009688;
 		color:white;
+		display:inline;
 	}
 	input[type='submit']:hover {
 		background-color: #03c0ae;
@@ -72,11 +73,25 @@
 	}
 	a#ajoutProduit {
 		text-decoration: none;
-		color:black;
-		font-size: 2rem;
+		color:blue;
+		font-size: 2.5rem;
 	}
 	a#ajoutProduit:hover {
 		text-decoration: underline;
+	}
+	a#modifProduit {
+		text-decoration: none;
+		color:green;
+		font-size: 2rem;
+	}
+	a#modifProduit:hover {
+		text-decoration: underline;
+	}
+	a#supprProduit {
+		text-decoration: none;
+		text-align: center;
+		color:red;
+		font-size: 2rem;
 	}
 
 	h2 {
@@ -87,81 +102,44 @@
 	table {
 		width:50%;
 		margin:auto;
+		border: 1px solid gray;
 	}
 	td {
-		text-align: center;
-		border: 1px solid gray;
+		border: 1px dashed gray;
 		font-size: 2rem;
+		padding: .5rem 1rem;
 	}
-
-
-/* Details */
-	/* h1 {
-		font-size: 4rem;
-		text-align: center;
+	th {
+		padding: .5rem 1rem;
 		text-transform: uppercase;
-	}
-	form {
-		width:50%;
-		margin: 2rem auto;
-		text-align: center;
-	}
-	form label {
-		font-family: 'Ubuntu', sans-serif;
-		font-size: 2rem;
-	
-		width: 100%;
-		display: block;
-		text-align:center;
-		margin:0.5rem;
-	}
-	input {
-		display: block;
-		margin: auto;
-		padding:1rem;
-		border: 0.1rem solid #e0e0e0;
-		width:20%;
-			border-radius: 0.5rem;
-	}
-	
-	input[type='submit'] {
-		width: 15%;
-		border: 0.1rem solid #e0e0e0;
-		font-family: 'Ubuntu', sans-serif;
-		font-family: 1.5rem;
-		border-radius: 0.5rem;
-		padding:0.5rem;
-		margin:0.5rem auto;
-	}
-	input[type="submit"]:hover {
-	    background-color: black;
-	    color:white;
-	}
-	
-	::-webkit-input-placeholder { Chrome/Opera/Safari
-		color: pink;
-		text-align: center;
-	}
-	::-moz-placeholder { Firefox 19+
-		color: pink;
-		text-align: center;
-	}
-	:-ms-input-placeholder { IE 10+
-		color: pink;
-		text-align: center;
-	}
-	:-moz-placeholder { Firefox 18-
-		color: pink;
-		text-align: center;
-	}
-	
-	form #lar, form #lon {
-		display: inline;
-	}
-	
-	p {
-		font-family: 'Ubuntu', sans-serif;
 		font-size: 1.5rem;
-		text-align:center;
-		color: red;
-	} */
+	}
+
+
+/* Sign Up */
+
+	form a {
+		width: 30%;
+		margin: 0.2rem auto;
+		background-color:  #009688;
+		padding:.6rem 2.5rem;
+		border:0;
+		border-radius: 3px;
+		color:white;
+		text-decoration: none;
+	}
+	form a:hover {
+		background-color: #03c0ae;
+	}
+
+	form a#signup {
+		display: block;
+		width: 30%;
+		margin: 0.3rem auto;
+		background-color:  #009688;
+		padding:.6rem 2.5rem;
+		border:0;
+		border-radius: 3px;
+		color:white;
+		text-decoration: none;
+	

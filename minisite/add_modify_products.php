@@ -47,7 +47,7 @@ if (isset($_SESSION['user']['type']) && $_SESSION['user']['type'] == 'admin') {
 			<input type="text" name="prPrice" placeholder="prix de produit" value="<?php echo $datas['pr_price']; ?>" /><br>
 			<label for="">Description du produit</label>
 			<textarea name="prDescription" placeholder="description de produit"><?php echo $datas['pr_description']; ?></textarea><br>
-			<input type="submit" value="Ajouter le produit" />
+			<input type="submit" value="Ajouter un produit" />
 		</form>
 	</body>
 </html>

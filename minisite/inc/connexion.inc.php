@@ -13,12 +13,13 @@ if ($online) {
 } else {
 	$server = "localhost";
 	$login = "root";
-	$password = "";
+	$password = "administrateur";
 	$dbName = "minisite"; // Mettre le nom de la base de donnée 
 }
 
 // Connexion au serveur 
-$connexion = mysqli_connect($server, $login, $password) or die("Erreur de connection au serveur ".$server);
+//echo "connexion...";
+$connexion = mysqli_connect($server, $login, $password) or die("Erreur de connection au serveur: ".$server);
 
 
 // connexion à la bdd

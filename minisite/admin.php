@@ -17,7 +17,8 @@ unset($_SESSION['user']);
 				<label for="login">Connectez Vous</label>
 				<input type="text" placeholder="votre e-mail" name="userMail" />
 				<input type="password" placeholder="votre mot de passe" name="userPwd">
-				<input type="submit" value="LOGIN">
+				<input type="submit" value="Log In">
+				<a href="add_users.php">Sign Up</a>
 			</fieldset>
 		</form>
 	</body>
