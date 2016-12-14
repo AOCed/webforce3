@@ -51,50 +51,51 @@ $lar = (isset($_SESSION['largeur'])) ? $_SESSION['largeur'] : '';
 	?>
 
 
-<!-- 	<form action="./traitement.php?action=displayPost" method="post">
-	<input type="hidden" value="caché" name="champCache" />
-	<input type="password" value="" name="mdp" />
-	<input type="text" value="" name="unTexte" />
-	<input type="text" value="lecteur seule" name="unDeuxiemeTexte" readonly="readonly" />
-	<br>
-	<select name="pays" >
-		<option value="1" selected="selected">France</option>
-		<option value="2">Espagne</option>
-		<option value="3">Benelux</option>
-		<option value="4">Italie</option>
-	</select>
-	<br>
-	<br>
-	<select name="metier" >
-		<option value="1" selected="selected">medecin</option>
-		<option value="2">developpeur</option>
-		<option value="3">eboueur</option>
-		<option value="4">gardien</option>
-	</select>
-	<br>
-	<input type="checkbox" value="check1" name="mesCheckbox[]" checked="checked" />check1<br>
-	<input type="checkbox" value="check2" name="mesCheckbox[]" />check2<br>
-	<input type="checkbox" value="check3" name="mesCheckbox[]" />check3<br>
-	<br>
-	<input type="radio" name="genre" value="homme" checked="checked" />Homme<br>
-	<input type="radio" name="genre" value="femme" />Femme<br>
-	<input type="radio" name="genre" value="autre" />Autre<br>
-	<br>
-	<input type="radio" name="couleur" value="rouge" />Rouge<br>
-	<input type="radio" name="couleur" value="vert" />Vert<br>
-	<input type="radio" name="couleur" value="bleu" />Bleu<br>
-	<br>
-	<input type="submit" value="c'est parti !" />
-</form> -->
+	<form action="./traitement.php?action=displayPost" method="post">
+		<input type="hidden" value="caché" name="champCache" />
+		<input type="password" value="" name="mdp" />
+		<input type="text" value="" name="unTexte" />
+		<input type="text" value="lecteur seule" name="unDeuxiemeTexte" readonly="readonly" />
+		<br>
+		<select name="pays" >
+			<option value="1" selected="selected">France</option>
+			<option value="2">Espagne</option>
+			<option value="3">Benelux</option>
+			<option value="4">Italie</option>
+		</select>
+		<br>
+		<br>
+		<select name="metier[]" multiple="multiple" >
+			<option value="1" selected="selected">medecin</option>
+			<option value="2">developpeur</option>
+			<option value="3">eboueur</option>
+			<option value="4">gardien</option>
+		</select>
+		<br>
+		<input type="checkbox" value="check1" name="mesCheckbox[]" checked="checked" />check1<br>
+		<input type="checkbox" value="check2" name="mesCheckbox[]" />check2<br>
+		<input type="checkbox" value="check3" name="mesCheckbox[]" />check3<br>
+		<br>
+		<input type="radio" name="genre" value="homme" checked="checked" />Homme<br>
+		<input type="radio" name="genre" value="femme" />Femme<br>
+		<input type="radio" name="genre" value="autre" />Autre<br>
+		<br>
+		<input type="radio" name="couleur" value="rouge" />Rouge<br>
+		<input type="radio" name="couleur" value="vert" />Vert<br>
+		<input type="radio" name="couleur" value="bleu" />Bleu<br>
+		<br>
+		<input type="submit" value="c'est parti !" />
+	</form>
 
 	<form action="./traitement.php?action=bissextile" method="post">
 		<label for="bissextile">Année bissextile ?</label>
 		<input type="text" name="anneeBis" placeholder="Saississez une anneée.">
 		<input type="submit" value="Saississez une année">
 	</form>
-		<?php 		
+
+	<?php 		
 		echo '<p>';
-	if (!empty($_SESSION['resultat3'])) echo $_SESSION['resultat3'];
+		if (!empty($_SESSION['resultat3'])) echo $_SESSION['resultat3'];
 		echo '<p>';
 
 		unset($_SESSION['resultat3']);
