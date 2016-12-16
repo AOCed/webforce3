@@ -16,6 +16,7 @@
 			<span><?php echo $article['ar_id_user']; ?> | </span>
 			<span><?php echo $article['ar_date']; ?></span>
 		</section>
+
 	<?php } else { ?>
 		<!-- Si l'id n'est pas valide ou qu'un article ne correspond -->
 		<p>Cet article n'existe pas ou plus.</p>
