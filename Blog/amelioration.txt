@@ -1,0 +1,34 @@
+1/Ajout d'info sur les profils utilisateur
+2/Affichage de l'heure et des infos de l'auteur sur un article
+3/Backoffice: Bouton supprimer
+4/Backoffice: lister les membres
+5/Ajout de mots-clés
+6/Description / Title / Keywords dans le head
+7/CSS
+8/Ajout de catégories (comme une facon de naviguer, facon de trier)
+9/Améliorer loa recherche (par titre, par catégorie, etc);
+
+
+
+Type de données 
+.json - COURANT et plus rapide à parser
+$jsonString = {"panier": [{"titre": "Lorem", "prix":20}]}
+en PHP, une fonction json_decode(); qui permet d'utuiliser en HTML
+json_decode($jsonString); ====>
+array("panier" => array(
+	array("titre"=>"Lorem", "prix"=>"20")));
+
+
+
+.xml - on choisit les noms de balises, les noms d'attributs
+	<panier>
+		<produit>
+			<titre>Lorem</titre>
+			<prix>20</prix>
+		</produit>
+	</panier>
+
+	OU ALORS
+
+	<produit titre="Lorem" prix="20"></produit>
+

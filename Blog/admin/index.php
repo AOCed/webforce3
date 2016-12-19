@@ -1,6 +1,13 @@
 <?php 
 	require_once('../inc/init.inc.php');
 	// include('inc/list.inc.php');
+
+
+	if (empty($_SESSION['user']) || $_SESSION['admin'] == 0) {
+		header('Location: ../?page=login');
+		die();
+		# code...
+	}
 ?>
 
 
@@ -13,6 +20,8 @@
 	</head>
 	<body>
 		<?php
+			include('../inc/header.inc.php');
+
 			if(!empty($_GET['page']) && file_exists('inc/'.$_GET['page'].'.inc.php')) {
 					include('inc/'.$_GET['page'].'.inc.php');
 			} else {

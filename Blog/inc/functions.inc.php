@@ -25,4 +25,33 @@
 		return $data;
 	}
 
+	function search ($pQuery) {
+		global $connection;
+		
+		$pQuery = explode(' ', $pQuery);
+
+		$cCnt = count($pQuery);
+		$regex = "";
+
+		for ($i=0; $i < $cCnt; $i++) { 
+			if($pQuery[$i] != ''){
+				if ($i==0) {
+					$regex .= $pQuery[$i];
+				} else {
+					$regex .= '|'.$pQuery[$i];
+				}
+			}
+		}
+
+		$regex = trim($regex, '|');
+
+		$data = array('regex' => $regex);
+
+		$sql = "SELECT * from articles WHERE ar_text REGEXP :regex";
+		$req = $connection->prepare($sql);
+		$req->execute($data);
+
+		return $req->fetchAll();
+	}
+
 ?>
