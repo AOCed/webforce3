@@ -1,0 +1,72 @@
+﻿/* propriétés générales de la page */ 
+body {
+	background-color:#DDE3EF;
+	}
+/* propriétés du menu horizontal */
+#menu_horizontal {
+	text-align:center;
+	}
+/* propriétés du chemin de fer */
+#chemin_fer {	
+	}
+/* bloc central uniquement crée pour uniformiser les hauteurs des deux blocs contenus (menu_vertical et contenu) */
+#bloc_central {
+	}
+/* propriétés du menu vertical */
+#menu {
+	float:left;
+	width:20%;
+	height:300px;
+	}
+/* propriétés du contenu */
+#contenu {
+	float:left;
+	width:80%;
+	height:300px;
+	font-size:28px;
+	text-align:center;
+	}
+/* propriétés du pied de page */
+#pied_page {
+	clear:both;
+	text-align:center;
+	}
+	
+	
+/* comportement de la liste dans le bloc menu_horizontal */
+#menu_horizontal li {
+	margin-right:40px;
+    list-style-type: none;
+    display: inline;
+	}
+	
+/* propriétés des liens (de base et déjà visités) contenus dans le bloc menu_horizontal */
+#menu_horizontal a:link, #menu_horizontal a:visited {
+	color:#339999;
+	font-weight:bold;
+	text-decoration:none;
+	}
+/* propriétés des liens (au dessus et actifs) contenus dans le bloc menu_horizontal */
+#menu_horizontal a:hover, #menu_horizontal a:active {
+	text-decoration:underline overline;
+	}
+/* propriétés des liens (de base et déjà visités) contenus dans le bloc chemin_fer */
+#chemin_fer a:link, #chemin_fer a:visited {
+	color:#FF9933;
+	font-weight:bold;
+	text-decoration:none;
+	}
+/* propriétés des liens (au dessus et actifs) contenus dans le bloc chemin_fer */
+#chemin_fer a:hover, #chemin_fer a:active {
+	text-decoration:underline overline;
+	}
+/* propriétés des liens (de base et déjà visités) contenus dans le bloc menu_vertical */
+#menu_vertical a:link, #menu_vertical a:visited {
+	color:#CC66CC;
+	font-size:16px;
+	text-decoration:none;
+	}
+/* propriétés des liens (au dessus et actifs) contenus dans le bloc menu_gauche */
+#menu_vertical a:hover, #menu_vertical a:active {
+	text-decoration:underline;
+	}
