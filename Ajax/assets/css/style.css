@@ -1,0 +1,120 @@
+@import url('http://fonts.googleapis.com/css?family=Ubuntu');
+
+/* Reset */
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html {
+		font-size: 62.5%;
+	}
+	body {
+		width: 100%;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 1.5rem;
+		text-align: center;
+		background-color: #eee;
+	}
+	h1 {
+		text-align: center;
+		color:white;
+		text-transform: uppercase;
+		padding:2em;
+		/* background-image: url(camelcase.jpg);
+		background-size: cover;
+		background-repeat: no-repeat; */
+		background-color: black;
+		background-position: center;
+	}
+	h2 {
+		padding:1.5rem;
+		text-align:center;
+	}
+	h3 {
+		color:black;
+		text-decoration: none;
+	}
+	h3:hover {
+		color:black;
+		color:#ff9800;
+
+	}
+	li {
+		list-style:none;
+		display:inline-block;
+
+	}
+	main {
+		width:60%;
+		margin:1rem auto;
+		border: 1px solid gray;
+		border-radius: 5px;
+	}
+	div {
+		margin: 2rem;
+	}
+	.retour {
+		width:80%;
+		padding: 3rem;
+		margin:auto;
+		font-weight: bold;
+		/*border:1px dashed black;*/
+		border-radius: 8px;
+		text-align:left;
+	}
+
+
+
+
+/* Formualiraire */
+	form {
+		width: 100%;
+	}
+	input {
+		display:block;
+		width:60%;
+		border:none;
+		margin:1rem auto;
+		padding:1rem;
+		border-radius: 5px;
+		}
+	input[type="submit"] {
+		width:20%;
+		margin:1rem auto;
+		padding:1rem;
+		border:0;
+		border-radius: 3px;
+	}
+	input[type="submit"]:hover {
+		background-color: white;
+	}
+
+	div.chat {
+		border-bottom:1px dashed gray;
+	}
+
+	p.pseudo {
+		font-family: arial;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		color:#635e5e;
+	}
+	p.message {
+		font-family: arial;
+		font-size:2rem;
+		color:black;
+	}
+	p.date {
+		font-size: 1rem;
+		color:orange;
+	}
+
+/* Formulaire Gift */
+	section.gift {
+		width:50%;
+		margin: auto;
+	}
+	input.gift {
+		width:40%;
+		margin:1rem auto;
+	}
