@@ -1,0 +1,162 @@
+@import url('http://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Exo:100|Rajdhani:500');
+
+/* Reset */
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html {
+		font-size: 62.5%;
+	}
+	body {
+		width: 100%;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 1.5rem;
+		text-align: center;
+		background-color: #eee;
+	}
+	p, span {
+		margin:1rem;
+		font-family: 'Rajdhani', sans-serif;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	section.movie {
+		padding:2rem;
+		width:40%;
+		margin:1rem auto;
+		text-align:center;
+		background-color: #a79d9d;
+		border-radius: 5px;
+
+	}
+	h1 {
+		text-align: center;
+		color:white;
+		text-transform: uppercase;
+		padding:2em;
+		/* background-image: url(camelcase.jpg);
+		background-size: cover;
+		background-repeat: no-repeat; */
+		background-color: black;
+		background-position: center;
+	}
+	h2 {
+		padding:1.5rem;
+		text-align:center;
+	}
+	h3 {
+		color:black;
+		text-decoration: none;
+	}
+	h3:hover {
+		color:black;
+		color:#ff9800;
+
+	}
+	li {
+		list-style:none;
+		display:inline-block;
+
+	}
+	main {
+		width:60%;
+		margin:1rem auto;
+		border: 1px solid gray;
+		border-radius: 5px;
+	}
+	.retour {
+		width:80%;
+		padding: 3rem;
+		margin:auto;
+		font-weight: bold;
+		/*border:1px dashed black;*/
+		border-radius: 8px;
+		text-align:left;
+	}
+
+
+
+
+/* Formualiraire */
+	form {
+		width: 100%;
+	}
+	input {
+		display:block;
+		width:30%;
+		border:none;
+		margin:0 auto;
+		padding:1rem;
+		border-radius: 5px;
+		}
+	input[type="submit"] {
+		width:10%;
+		margin:1rem auto;
+		padding:1rem;
+		border:0;
+		border-radius: 5px;
+	}
+	input[type="submit"]:hover {
+		background-color: white;
+	}
+
+	div.suggestion {
+		width:30%;
+		margin:0 auto;
+		padding:1rem;
+		border-bottom:1px solid gray;
+		border-radius: px;	
+		text-align:left;
+		cursor: pointer;
+	}
+
+	div.chat {
+		border-bottom:1px dashed gray;
+	}
+
+	p.pseudo {
+		font-family: arial;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		color:#635e5e;
+	}
+	p.message {
+		font-family: arial;
+		font-size:2rem;
+		color:black;
+	}
+	p.date {
+		font-size: 1rem;
+		color:orange;
+	}
+
+/* Formulaire Gift */
+	section.gift {
+		width:50%;
+		margin: auto;
+	}
+	input.gift {
+		width:40%;
+		margin:1rem auto;
+	}
+
+
+/* Scroll Infini */
+	footer {
+		background-color: black;
+		color:white;
+	}
+	section {
+		text-align: justify;
+	}
+	section.scrolling {
+		width:50%;
+		margin:auto;
+		text-align:justify;
+	}
+
+	.bouton3 {
+		padding:1rem;
+	}
