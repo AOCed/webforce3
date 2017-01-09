@@ -7,7 +7,7 @@
     </head>
     <body>
         <header>
-            <h1>scrolling infini</h1>
+            <h1>Billboard for Movie!</h1>
         </header>
         <section class="scrolling">
             <h2>Section start !</h2>
@@ -35,7 +35,7 @@
             </p>
         </section>
         <footer>
-            <div class="bouton3">Voir plus de contenu</div>
+            <div class="moreload>Voir plus de contenu</div>
         </footer>
         <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -86,7 +86,7 @@
             
             // QUAND ON CLIQUE SUR .bouton3
             // ALORS ON VA charger du contenu supplémentaire
-            $(".bouton3").on("click", chargerSectionBouton) // Je peux ajouter mouseover après click si je veux que ca charge automatique qu and le souris est dessus
+            $(".bouton3").on("click mouseover", chargerSectionBouton) // Je peux ajouter mouseover après click si je veux que ca charge automatique qu and le souris est dessus
 
             // Faut suivre le scroll de la fenetre pour savoir si on est en bas de la page
             // On ajoute un listener sur le scroll de la fenetre

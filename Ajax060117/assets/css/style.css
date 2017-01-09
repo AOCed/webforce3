@@ -33,13 +33,13 @@
 	}
 	h1 {
 		text-align: center;
-		color:white;
+		color:black;
 		text-transform: uppercase;
 		padding:2em;
 		/* background-image: url(camelcase.jpg);
 		background-size: cover;
 		background-repeat: no-repeat; */
-		background-color: black;
+		background-color: white;
 		background-position: center;
 	}
 	h2 {
@@ -157,6 +157,6 @@
 		text-align:justify;
 	}
 
-	.bouton3 {
+	.moreload {
 		padding:1rem;
 	}

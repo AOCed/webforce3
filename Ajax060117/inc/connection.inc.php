@@ -3,7 +3,7 @@
 $host	 	= "localhost";
 $dbname 	= "dvdtheque";
 $user 		= "root";
-$password 	= "";
+$password 	= "root";
 
 // http://php.net/manuel/fr/pdo.construct.php
 try {
