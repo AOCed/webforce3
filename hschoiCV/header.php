@@ -12,8 +12,8 @@
 	<body>
 		<header>
 			<h1>Hwa-Seon CHOI</h1>
-			<p>Web Developer</p>
-			<h2>I build websites in the office, take photographs outside and enjoy eating inside.</h2>
+			<p>{Web Developer};</p>
+			<h2>I build websites in the office, take photographs outside and enjoy eating everywhere.</h2>
 			<nav>
 				<ul>
 					<li><a href="#about">About</a></li>
