@@ -11,15 +11,15 @@
 	</head>
 	<body>
 		<header>
-			<h1>Hwa-Seon Choi</h1>
+			<h1>Hwa-Seon CHOI</h1>
 			<p>Web Developer</p>
 			<h2>I build websites in the office, take photographs outside and enjoy eating inside.</h2>
 			<nav>
 				<ul>
-					<li>About</li>
-					<li>Portfolio</li>
-					<li>Find me more</li>
-					<li>Hire me!</li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#cv">Curriculum Vitae</a></li>
+					<li><a href="#contact">Hire me!</a></li>
 				</ul>
 			</nav>
 		</header>
