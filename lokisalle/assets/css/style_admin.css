@@ -1,0 +1,91 @@
+
+/* Reset */
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html {
+		font-size: 62.5%;
+	}
+
+	body {
+		width: 100%;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 1.5rem;
+	}
+	table {
+		width:100%;
+		margin:0 auto;
+	}
+	table th {
+		background-color: black;
+		color:#eee;
+		border:1px solid gray;
+		padding:1rem;
+	}
+	table td {
+		padding: .5rem;
+		border:1px solid #ccc;
+	}
+/* Header nav menu: partie admin */
+	nav {
+		width:100%;
+		margin: 0 auto;
+	}
+	nav ul {
+		width:100%;
+		text-align: center;
+		padding:.5rem;
+		background-color: #ccc;
+	}
+	nav ul li {
+		display: inline-block;
+		width: calc(100%/6 - 2rem);
+		line-height: 1rem:;
+	}
+	nav ul li a {
+		color: black;
+		text-decoration: none;
+	}
+	nav ul li a:hover {
+		text-decoration: none;
+		color:white;
+	}
+	.signout {
+		color:red;
+	}
+	a.signout:hover {
+		color:red;
+		text-decoration: underline;
+	}
+	
+
+/* Formulaire */
+	form {
+		margin:2rem 0;
+	}
+	label {
+		display:block;
+	}
+	textarea, input, select {
+		display:block;
+		width:100%;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+	}
+	input[type="submit"] {
+		margin:2rem;
+		width:20%;
+	}
+
+	img {
+		width:150px;
+	}
+	.fa {
+		padding:0.2rem;
+	}
+
+/* Datepicker */
+#datetimepicker {
+	width:50%;
+}

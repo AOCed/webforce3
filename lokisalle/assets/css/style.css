@@ -1,0 +1,35 @@
+
+.nav {
+	background-color:#f8f8f8;
+	border-radius: 5px;
+	border: 1px solid #e7e7e7;
+}
+
+.nav-pills .presentation .active {
+	border: 1px solid #e7e7e7;
+}
+
+/*.row{
+	margin-right: 15px;
+	margin-left: 15px;
+	width: 100%;
+}
+*/
+
+footer{
+	background-color:#f8f8f8;
+	border-radius: 5px;
+	border: 1px solid #e7e7e7;
+	text-align: center;
+
+}
+
+.periode{
+	background-color:#f8f8f8;
+	border-radius: 5px;
+	border: 1px solid #e7e7e7;
+}
+
+span.hourpicker .periode {
+		display: none;
+	}
