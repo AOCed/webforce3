@@ -13,6 +13,15 @@ if (isset($_GET['action']) && $_GET['action']!="") {
 			case 'deleteSalle':
 				deleteSalle();
 			break;
+			case 'addProduct':
+				addProduct();
+				break;
+			case 'modifProduct':
+				modifProduct();
+				break;
+			case 'deleteProduct':
+				deleteProduct();
+				break;
 			default: break;
 		}
 	} else {		
@@ -146,4 +155,71 @@ function deleteSalle(){
 
 	header('Location: ../admin/index.php');
 }
+
+
+function addProduct(){
+	global $connexion;
+
+	$arrivee = $_POST['arrivee'];
+	$depart = $_POST['depart'];
+	$salle = $_POST['salle'];
+	$tarif = $_POST['tarif'];
+
+	if (!empty($arrivee) && !empty($depart) && !empty($tarif)) {
+
+		$data = array(
+			"arrivee" => $arrivee,
+			"depart" => $depart,
+			"produit" => $salle,
+			"tarif" => $tarif
+		);
+
+		$sql = "INSERT INTO `produit` (`date_arrivee`, `date_depart`, id_salle, `prix`) VALUES ( :arrivee, :depart, :produit, :tarif)";
+		$req = $connexion->prepare($sql);
+		$req->execute($data);
+
+		header('Location: ../admin/inc/product.inc.php');
+	}
+
+
+}
+
+function modifProduct() {
+	global $connexion;
+
+
+
+	$arrivee = $_POST['arrivee'];
+	$depart = $_POST['depart'];
+	$salle = $_POST['salle'];
+	$tarif = $_POST['tarif'];
+
+	if (!empty($arrivee) && !empty($depart) && !empty($tarif)) {
+
+		$data = array(
+			"arrivee" => $arrivee,
+			"depart" => $depart,
+			"tarif" => $tarif
+		);
+
+
+		$sql = "UPDATE `produit` SET date_arrivee=:arrivee, date_depart=:depart, prix=:tarif WHERE produit.id_produit=".$salle;
+		$req = $connexion->prepare($sql);
+		$req->execute($data);
+
+	header('Location: ../admin/product.php');
+	}
+}
+
+function deleteProduct() {
+	global $connexion;
+
+	$sql = "DELETE FROM produit WHERE produit.id_produit=".$_GET['id'];
+	$req = $connexion->prepare($sql);
+	$req->execute();
+
+	header('Location: ../admin/index.php');
+}
+
+
 ?>

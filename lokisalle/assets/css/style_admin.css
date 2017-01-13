@@ -22,10 +22,12 @@
 		color:#eee;
 		border:1px solid gray;
 		padding:1rem;
+		text-align: center;
 	}
 	table td {
 		padding: .5rem;
 		border:1px solid #ccc;
+		text-align: center;
 	}
 /* Header nav menu: partie admin */
 	nav {
@@ -66,16 +68,39 @@
 	}
 	label {
 		display:block;
+		margin:5px;
 	}
 	textarea, input, select {
 		display:block;
 		width:100%;
+		height:3rem;
 		border-radius: 3px;
+		padding:.5rem;
 		border: 1px solid #ccc;
 	}
+	textarea#adresse {
+		height:6rem;
+	}	
+	textarea#description {
+		height:6rem;
+	}
 	input[type="submit"] {
-		margin:2rem;
+		margin:3rem 0;
 		width:20%;
+		float:right;
+		line-height: 17px;
+	}
+	input[type="submit"]:hover {
+		background-color: #109bc6;
+		color:white;
+	}
+	input.product {
+		float:right;
+		margin:1rem 0;
+	}
+	input.product:hover {
+		background-color: #109bc6;
+		color:white;
 	}
 
 	img {
