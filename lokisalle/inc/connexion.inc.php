@@ -2,7 +2,7 @@
 	// Configurer la connexion 
 	$host = "localhost";
 	$user = "root";
-	$password = "";
+	$password = "rootroot";
 	$db = "lokisalle";
 	try {
 		$connexion = new PDO('mysql:host='.$host.';dbname='.$db.';charset=utf8', $user, $password);

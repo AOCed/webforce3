@@ -16,7 +16,7 @@
 					<ul>
 						<li><a href="index.php">Gestion des Salles</a></li>
 						<li><a href="product.php">Gestion des produits</a></li>
-						<li><a href="#">Gestion des membres</a></li>
+						<li><a href="membre.php">Gestion des membres</a></li>
 						<li><a href="#">Gestion des avis</a></li>
 						<li><a href="#">Gestion des commandes</a></li>
 						<li><a href="#" class="signout">Déconnexion</a></li>
