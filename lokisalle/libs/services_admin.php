@@ -22,6 +22,15 @@ if (isset($_GET['action']) && $_GET['action']!="") {
 			case 'deleteProduct':
 				deleteProduct();
 				break;
+			case 'addMembre':
+				addMembre();
+				break;
+			case 'modifMembre':
+				modifMembre();
+				break;
+			case 'deleteMembre':
+				deleteMembre();
+				break;
 			default: break;
 		}
 	} else {		
@@ -29,6 +38,7 @@ if (isset($_GET['action']) && $_GET['action']!="") {
 	}
 
 function addSalle() {
+
 	global $connexion;
 
 	$titre = trim($_POST['titre']);
@@ -80,6 +90,7 @@ function addSalle() {
 }
 
 function modifSalle() {
+
 	global $connexion;
 
 	$titre = trim($_POST['titre']);
@@ -130,10 +141,7 @@ function modifSalle() {
 				"cp" => $cp,
 				"categorie" => $categorie
 			);
-// echo "<pre>";
-// var_dump($data);
-// echo "</pre>";
-// die();
+
 			$sql = "UPDATE `salle` SET titre=:titre, description=:description, photo=:photo, pays=:pays, ville=:ville, adresse=:adresse, cp=:cp, capacite=:capacite, categorie=:categorie WHERE id_salle=".$_POST['id_salle'];
 			$req = $connexion->prepare($sql);
 			$req->execute($data);
@@ -220,6 +228,34 @@ function deleteProduct() {
 
 	header('Location: ../admin/index.php');
 }
+function addMembre() {
+
+	global $connexion;
+
+	$pseudo = trim($_POST['pseudo']);
+	$email = trim($_POST['email']);
+	$mdp = trim($_POST['mdp']);
+	$civilite = trim($_POST['civilite']);
+	$nom = trim($_POST['nom']);
+	$statut = trim($_POST['statut']);
+	$prenom = $_POST['prenom'];
+
+	if (!empty($pseudo) && !empty($email) && !empty($mdp) && !empty($civilite) && !empty($nom) && !empty($statut) && !empty($prenom) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 ?>
