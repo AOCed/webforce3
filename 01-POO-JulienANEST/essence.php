@@ -85,6 +85,7 @@ class Pompe
 	public function fairePlein(Voiture $voiture)
 	{
 
+		// Mon Code
 		// $essenceVoiture = $voiture->getLitresEssence();
 		// $contenanceVoiture = $voiture->getContenanceReservoir();
 		// // var_dump($contenanceVoiture);
@@ -100,13 +101,13 @@ class Pompe
 		// Code de Julien 
 		// Combien d'essence pour faire le plein
 		$besoinEssence = $voiture->getContenanceReservoir() - $voiture->getLitresEssence();
-		var_dump($besoinEssence);
-		var_dump($voiture->getContenanceReservoir());
 
 		// Fiare le plein c'est mettre le nombre de litre contenu à la valeur de la contenance du réservoir
 		$voiture->setLitresEssence($voiture->getContenanceReservoir());
+		
 		// On enlèce le nombre de litres qu'il a fallu pour faire le plein
-		$this->setLitresEssence($this->getLitresEssence()-$besoinEssence());
+		$this->setLitresEssence($this->getLitresEssence()-$besoinEssence);
+
 
 	}
 
