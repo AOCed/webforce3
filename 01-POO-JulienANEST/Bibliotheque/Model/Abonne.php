@@ -27,6 +27,19 @@ class Abonne {
 	
 	/**
 	 * 
+	 * @var string
+	 */
+	private $email;
+
+	/**
+	 * 
+	 * @var string
+	 */
+	private $mdp;
+
+
+	/**
+	 * 
 	 * @return int
 	 */
 	public function getId() {
@@ -48,15 +61,31 @@ class Abonne {
 	public function getPrenom() {
 		return $this->prenom;
 	}
-	
+
+	/**
+	 * 
+	 * @return string
+	 */
+	public function getEmail() {
+		return $this->email;
+	}
+
+	/**
+	 * 
+	 * @return string
+	 */
+	public function getMdp() {
+		return $this->mdp;
+	}
+
 	/**
 	 * 
 	 * @param int $id
 	 */
 	public function setId($id) {
-		$this->id = $id;
-		return $id;
-	}
+			$this->id = $id;
+			return $id;
+		}
 	
 	/**
 	 * 
@@ -74,6 +103,24 @@ class Abonne {
 	public function setPrenom($prenom) {
 		$this->prenom = $prenom;
 		return $prenom;
+	}
+
+	/**
+	*
+	* @param string $email
+	*/
+	public function setEmail($email) {
+		$this->email = $email;
+		return $email;
+	}
+
+	/**
+	*
+	* @param string $mdp
+	*/
+	public function setMdp($mdp) {
+		$this->mdp = $mdp;
+		return $mdp;
 	}
 	
 	public static function fetchAll() {
@@ -126,6 +173,25 @@ class Abonne {
 		return true;
 	}
 	
+
+	public static function validateEmail($email, &$msg) {
+		
+		if(empty($email)) {
+			$msg = "L'adresse email est obligatoire";
+			return false;
+		} elseif (strlen($nom)>100){
+			$msg = "L'adresse email ne doit pas dépasser plus de 100 caractères.";
+			return false;
+		} elseif (!filter_var($email, FILTER_VAlIDATE_EMAIL)) {
+			$msg = "Merci de rentrer correct email adresse.";
+			return false;
+		}
+	
+		return true;
+	}
+
+	// var_dump(filter_var($email, FILTER_VAlIDATE_EMAIL));
+
 	public function save() {
 		if($this->id){
 			$this->update();
@@ -139,9 +205,10 @@ class Abonne {
 		
 		$prenom = $cnx->quote($this->prenom);
 		$nom = $cnx->quote($this->nom);
+		$email = $cnx->quote($this->email);
 		$query = <<<EOS
-INSERT INTO abonne(prenom, nom)
-VALUES ($prenom, $nom)
+INSERT INTO abonne(prenom, nom, email)
+VALUES ($prenom, $nom, $email)
 EOS;
 		$cnx->exec($query);
 		$this->setId($cnx->LastInsertId());
@@ -156,11 +223,13 @@ EOS;
 		$query = <<<EOS
 UPDATE abonne SET 
 prenom = {$cnx->quote($this->prenom)}, 
-nom = {$cnx->quote($this->nom)}
-WHERE abonne.id = {$cnx->quote($this->id)};
+nom = {$cnx->quote($this->nom)},
+email = {$cnx->quote($this->email)}
+WHERE abonne.id = {$cnx->quote($this->id)}
 EOS;
 		$cnx->exec($query);
 	}
+
 	
 	public function delete() {
 		$cnx = Cnx::getInstance();

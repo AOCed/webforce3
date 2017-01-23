@@ -11,9 +11,9 @@ if (isset($_GET['nom'])) {
 	$abonnes = Abonne::fetchAll();
 }
 
-// echo "<pre>";
-// var_dump($abonnes);
-// echo "</pre>";
+echo "<pre>";
+var_dump($abonnes);
+echo "</pre>";
 
 require 'view/abonne.php';
 
