@@ -24,7 +24,7 @@ require 'layout/top.php';
 		</div>
 		<div class="form-group <?php if(isset($errors['email'])) {echo "has-error";} ?> ">
 			<label for="">Email</label>
-			<input type="text" name="email"  class="form-control" value="<?= htmlentities($abonne->getEmail()); ?>"/>
+			<input type="email" name="email"  class="form-control" value="<?= htmlentities($abonne->getEmail()); ?>"/>
 			<?php if(isset($errors['email'])): ?>
 				<span class="help-block"><?= $errors['email']; ?></span>
 			<?php endif;?>

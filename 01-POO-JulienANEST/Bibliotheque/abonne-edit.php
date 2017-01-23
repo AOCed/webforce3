@@ -17,10 +17,14 @@ if (!empty($_POST)) {
 	if (!Abonne::validateNom($_POST['nom'], $msg)) {
 		$errors['nom'] = $msg;
 	}
+	if (!Abonne::validateEmail($_POST['email'], $msg)) {
+		$errors['email'] = $msg;
+	}
+	
 	
 	$abonne->setPrenom($_POST['prenom']);
 	$abonne->setNom($_POST['nom']);
-	
+	$abonne->setEmail($_POST['email']);
 	
 	if(!empty($_POST['id'])) { // Modification 
 		$abonne->setId($_POST['id']);

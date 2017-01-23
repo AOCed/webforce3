@@ -72,14 +72,6 @@ class Abonne {
 
 	/**
 	 * 
-	 * @return string
-	 */
-	public function getMdp() {
-		return $this->mdp;
-	}
-
-	/**
-	 * 
 	 * @param int $id
 	 */
 	public function setId($id) {
@@ -114,15 +106,6 @@ class Abonne {
 		return $email;
 	}
 
-	/**
-	*
-	* @param string $mdp
-	*/
-	public function setMdp($mdp) {
-		$this->mdp = $mdp;
-		return $mdp;
-	}
-	
 	public static function fetchAll() {
 		
 		$cnx = Cnx::getInstance();
@@ -173,24 +156,24 @@ class Abonne {
 		return true;
 	}
 	
-
 	public static function validateEmail($email, &$msg) {
 		
 		if(empty($email)) {
-			$msg = "L'adresse email est obligatoire";
+			$msg = "L'adresse email est obligatoire.";
 			return false;
-		} elseif (strlen($nom)>100){
+		} elseif (strlen($email)>100){
 			$msg = "L'adresse email ne doit pas dépasser plus de 100 caractères.";
 			return false;
-		} elseif (!filter_var($email, FILTER_VAlIDATE_EMAIL)) {
+		} elseif (filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
 			$msg = "Merci de rentrer correct email adresse.";
 			return false;
 		}
 	
 		return true;
 	}
+	
 
-	// var_dump(filter_var($email, FILTER_VAlIDATE_EMAIL));
+
 
 	public function save() {
 		if($this->id){

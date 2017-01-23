@@ -11,9 +11,12 @@ if (isset($_GET['nom'])) {
 	$abonnes = Abonne::fetchAll();
 }
 
-echo "<pre>";
-var_dump($abonnes);
-echo "</pre>";
+// echo "<pre>";
+// var_dump($abonnes);
+// echo "</pre>";
+
+// var_dump(Abonne::validateEmail('ddd@email.fr', $msg));
+// var_dump(filter_var('ddd@email', FILTER_VALIDATE_EMAIL));
 
 require 'view/abonne.php';
 

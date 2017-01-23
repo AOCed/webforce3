@@ -21,13 +21,12 @@ require 'layout/top.php';
 			<button type="submit" class="btn btn-default">Rechcercher</button>
 		</form>
 	</div>
-	<table class="table">
+	<table class="table table-bordered table-hover">
 		<tr>
 			<th>Id</th>
 			<th>Prénom</th>
 			<th>Nom</th>
 			<th>Email</th>
-			<th>Mot de passe</th>
 			<th colspan="2">Action</th>
 		</tr>
 		<?php 
@@ -38,7 +37,6 @@ require 'layout/top.php';
 			<td><?= $abonne->getPrenom();?></td>
 			<td><?= $abonne->getNom();?></td>
 			<td><?= $abonne->getEmail();?></td>
-			<td><?= $abonne->getMdp();?></td>
 			<td><a href="abonne-edit.php?id=<?= $abonne->getId() ?>" style="color:green">Modifier</a> | <a href="abonne-delete.php?id=<?= $abonne->getId() ?>" style="color:red">Supprimer</a></td>
 		</tr>
 		<?php endforeach; ?>

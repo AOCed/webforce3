@@ -8,7 +8,7 @@ class Cnx {
 	
 	const HOST = 'localhost';
 	const USER = 'root';
-	const PASSWORD = "root";
+	const PASSWORD = "";
 	const DB_NAME = "bibliotheque";
 	
 	/**
