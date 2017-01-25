@@ -2,8 +2,17 @@
 
 namespace Model;
 
-class Salle 
+use \W\Model\Model;
+
+class SalleModel extends Model
 {
+	protected $primaryKey = "id_salle";
+
+	/**
+	 *
+	 * @var int
+	 */
+	private $id;
 	/**
 	 * 
 	 * @var string
@@ -59,6 +68,10 @@ class Salle
 	private $categorie;
 	
 	// Getters
+	
+	public function getId() {
+		return $this->id;
+	}
 	public function getTitre() {
 		return $this->titre;
 	}
@@ -88,45 +101,47 @@ class Salle
 	}
 	
 	// Setters
+	public function setId($id){
+		$this->id = $id;
+		return $id;
+	}
 	public function setTitre($titre) {
 		$this->titre = $titre;
 		return $titre;
 	}
-	public function getDescription($description) {
+	public function setDescription($description) {
 		$this->description = $description;
 		return $description;
 	}
-	public function getPays($pays) {
+	public function setPays($pays) {
 		$this->pays = $pays;
 		return $pays;
 	}
-	public function getVille($ville) {
+	public function setVille($ville) {
 		$this->ville = $ville;
 		return $ville;
 	}
-	public function getPhoto($photo) {
+	public function setPhoto($photo) {
 		$this->photo = $photo;
 		return $photo;
 	}
-	public function getAdresse($adresse) {
+	public function setAdresse($adresse) {
 		$this->adresse = $adresse;
 		return $adresse;
 	}
-	public function getCp($cp) {
+	public function setCp($cp) {
 		$this->cp = $cp;
 		return $cp;
 	}
-	public function getCapacite($capacite) {
+	public function setCapacite($capacite) {
 		$this->capacite = $capacite;
 		return $capacite;
 	}
-	public function getCategorie($categorie) {
+	public function setCategorie($categorie) {
 		$this->categorie = $categorie;
 		return $categorie;
 	}
-	
 
-	
 }
 
 

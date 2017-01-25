@@ -2,6 +2,6 @@
 	
 	$w_routes = array(
 		['GET', '/', 'Default#home', 'default_home'],
-		['GET|POST', '/gestion/', 'Default#gestion', 'default_gestion'],
-		['GET|POST', '/gestion/plan/', 'Default#plan', 'default_plan']
+		['GET|POST', '/salle/', 'Salle#salle', 'default_salle'],
+		['GET|POST', '/salle/plan/', 'Default#plan', 'default_plan']
 	);

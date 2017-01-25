@@ -12,7 +12,7 @@
 			<h1>W :: <?= $this->e($title) ?></h1>
 			<a href="<?= $this->url('default_home') ?>">Accueil</a>
 			<br>
-			<a href="<?= $this->url('default_gestion') ?>">Accueil < Gestion des salles </a>
+			<a href="<?= $this->url('default_salle') ?>">Accueil < Gestion des salles </a>
 			<br>
 			<a href="<?= $this->url('default_plan') ?>">Accueil < Gestion des salles < Plan </a>
 		</header>

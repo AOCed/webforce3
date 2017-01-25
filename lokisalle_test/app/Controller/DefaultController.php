@@ -15,9 +15,9 @@ class DefaultController extends Controller
 	{
 		$this->show('default/home',  ['username' => 'nov']);
 	}
-	public function gestion() 
+	public function salle() 
 	{	
-		$this->show('default/gestion');	
+		$this->show('Salle/salle');	
 		
 	}
 	public function plan()
