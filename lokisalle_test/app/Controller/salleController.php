@@ -9,21 +9,46 @@ class SalleController extends DefaultController {
 	
 	public function salle()
 	{
-		$salles = new SalleModel();
-		if(isset($_GET['id'])){
-			$salles = $salles->find($_GET['id']);
-		} else {
+
+			$salle = null;
+			$salles = new SalleModel();
 			$salles = $salles->findAll();
-		}
+	
+			if(isset($_GET['id'])){
+				$salle = new SalleModel();
+				$salle = $salle->find($_GET['id']);
+			
+			}
+			// Salle -> nom du modèle, /salle -> nom du fonction(ou/et nom du dossier
+			// 'salles' -> 
+			// $salles -> données récupérées par findAll();
+			// debug($salles);
+			$this->show('salle/salle', ['salle'=> $salle, 
+										'salles' => $salles]);
+			
+
+	}
+	
+	public function salleEdit() {
 		
-		// debug($salles);
-		// Salle -> nom du modèle, /salle -> nom du fonction(ou/et nom du dossier
-		// 'salles' -> 
-		// $salles -> données récupérées par findAll();
-		$this->show('Salle/salle', ['salles' => $salles]);
+		if(isset($_POST)){
+			$salle = new SalleModel();
+			$data = $_POST['id'];
+			debug($data);
+
+			$salle = $salle->update($data, $îd);
+			
+		}
+	}
+	
+	public function salleDelete($id){
+		$salle = new SalleModel();
+		$salle = $salle->delete($id);
+		
+		$this->redirectToRoute('default_salle');
 	}
 
-	
+
 }
 
 
