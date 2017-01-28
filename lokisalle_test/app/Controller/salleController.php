@@ -31,22 +31,27 @@ class SalleController extends DefaultController {
 	
 	public function salleEdit() {
 		
-		if(isset($_POST)){
+		if(isset($_POST) ){
 			$salle = new SalleModel();
-			$data = $_POST['id'];
-			debug($data);
+			$id = $salle['id_salle'];
+			$data =  array(
+					'titre'=>strip_tags($_POST['titre']),
+			);
 
-			$salle = $salle->update($data, $îd);
-			
+			$salle->update($data, $id);
+			$this-> redirectToRoute('salle');
+			// debug($salle);
 		}
+		
 	}
 	
 	public function salleDelete($id){
 		$salle = new SalleModel();
 		$salle = $salle->delete($id);
-		
+	
 		$this->redirectToRoute('default_salle');
 	}
+
 
 
 }

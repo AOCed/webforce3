@@ -141,6 +141,18 @@ class SalleModel extends Model
 		$this->categorie = $categorie;
 		return $categorie;
 	}
+	
+	public function salleAdd($data) {
+	
+		
+	}
+	
+	public function salleDelete($id){
+		$salle = new SalleModel();
+		$salle = $salle->delete($id);
+	
+		$this->redirectToRoute('default_salle');
+	}
 
 }
 
