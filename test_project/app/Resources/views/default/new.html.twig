@@ -1,0 +1,10 @@
+{# app/Resources/views/default/new.html.twig #}
+{% extends 'base1.html.twig' %}
+{% block title %} {{title}} - {{ ga_sitename }}{% endblock %}
+{% block body %}
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+
+{% endblock %}
