@@ -14,6 +14,7 @@ body{
 }
 ul,ol{
 	list-style-type: none;
+	width:100%;
 }
 a{
 	text-decoration: none;
@@ -21,36 +22,51 @@ a{
 h1,h2,h3,h4{
 	font-weight: lighter;
 }
-#conteneurTabs{
-	margin:100px auto;
-	width: 500px;
-	position: relative;
+
+header {
+	width:100%;
 }
-#conteneurTabs a{
-	width: 100%;
-	line-height: 28px;
-	background-color: #00bcd4;
-	border: 1px solid #ccc;
-	border-bottom: none;
-	color: #000;
+/*li {
+	width: calc(100%/3);
+	float:left;
+	display:inline-block;
+	color: black;
 	text-align: center;
-	display: inline-block;
-	border-radius: 5px;
-}
-#conteneurTabs div{
-	width: 96%;
-	padding:0 2%;
-	background-color: #ff5722;
-	line-height: 27px;
-	border: 1px solid #ccc;
-	height: 0;
-	overflow: hidden;
-	border-radius: 5px;
-}
-#conteneurTabs div:first-child{
-	/*z-index: 3;*/
-}
-#conteneurTabs .active{
+}*/
+li.menu {
+	width: calc(100%/3 - 2rem);
+	position:relative;
+	float:left;
+	display:inline-block;
 	background-color: #ccc;
-	color:#333;
+	text-align: center;
+	margin: 0 1rem;
+	padding:2rem 0;
+}
+li.menu:hover {
+	background-color: gray;
+}
+li a {
+	text-decoration:none;
+	color:black;
+}
+li a:hover {
+	text-decoration:none;
+	color:white;
+}
+ul.submenubar {
+	position:absolute;
+	top:60px;
+	display:none;
+}
+li.submenu {
+	background-color: #eee;
+	padding:1rem 0;
+}
+li.submenu:hover {
+	background-color: gray;
+}
+.active {
+	background-color: black;
+	color:white;
 }
