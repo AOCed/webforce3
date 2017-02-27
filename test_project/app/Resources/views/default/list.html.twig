@@ -1,0 +1,22 @@
+{% extends 'base1.html.twig' %}
+{% block title %} {{title}} - {{ ga_sitename }}{% endblock %}
+{% block body %}
+
+<ul>
+    {% for p in post if p.fullname %}
+        <li>Nom d'auteur: {{ p.fullname }}</li>
+        <li>Titre: {{ p.title }}</li>
+        <li>Description: {{ p.content }}</li>
+        <br />
+    {% else %}
+        <li>No users found</li>
+
+    {% endfor %}
+</ul>
+
+{% endblock %}
+{% block stylesheets %}
+<style>
+    ul { list-style: none;}
+</style>
+{% endblock %}

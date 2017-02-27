@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{# app/Resources/views/lucky/number.html.twig #}
+{% block body %}
+<h1>Your lucky number is {{ number }}</h1>
+
+
+{% for i in 1..10 %}
+    <div class="{{ cycle(['good', 'bad'], i) }}" style="background-color:blue">
+        <p> {{ 'blabla concat test '|upper ~ i }}</p>
+    </div>
+    <p style="color:green"> {{ 'bonbon '|upper ~ i }} </p>
+{% endfor %}
+
+
+
+{% endblock %}
