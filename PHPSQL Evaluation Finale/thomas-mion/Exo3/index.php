@@ -122,7 +122,7 @@ $(function() {
 
 
         $.ajax ({
-            url: "ajax.php",
+            url: "register.php",
             type: "POST",
             data: $(this).serialize(),
 
